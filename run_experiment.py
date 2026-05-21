@@ -90,6 +90,7 @@ def parse_args():
     p.add_argument("--skip_domain",      action="store_true")
     args = p.parse_args()
     args.device = "cuda" if torch.cuda.is_available() else "cpu"
+    return args
 
 
 # ---------------------------------------------------------------------------
