@@ -78,8 +78,6 @@ def parse_args():
     p.add_argument("--workers",          type=int, default=2)
     p.add_argument("--factors",          type=lambda x: x.split(","), required=True)
     p.add_argument("--simple_template",  type=str, default="simple_template")
-    p.add_argument("--domain_template",  type=str, default=None,
-                   help="Defaults to simple_template if not set.")
     p.add_argument("--main_template",    type=str, required=True)
     p.add_argument("--factor_templates", type=str, required=True)
     p.add_argument("--temperature",      type=float, default=1.0)
@@ -92,9 +90,6 @@ def parse_args():
     p.add_argument("--skip_domain",      action="store_true")
     args = p.parse_args()
     args.device = "cuda" if torch.cuda.is_available() else "cpu"
-    if args.domain_template is None:
-        args.domain_template = args.simple_template
-    return args
 
 
 # ---------------------------------------------------------------------------
