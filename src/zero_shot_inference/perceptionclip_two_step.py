@@ -115,7 +115,7 @@ def main(args):
 
     # Build classification head
     classification_head = get_zeroshot_classifier_flat_advance(
-        args, model.model, dataset.classnames, template_list
+        args, model, dataset.classnames, template_list
     )
     classification_head = classification_head.to(args.device)
     args.num_factor_value = len(template_list)
@@ -124,7 +124,7 @@ def main(args):
     if args.infer_mode == 1:
         template_list_woy = template_convert(template_list, args.convert_text)
         factor_head = get_zeroshot_classifier_puretext_advance(
-            args, model.model, template_list_woy
+            args, model, template_list_woy
         ).to(args.device)
 
     # Run inference

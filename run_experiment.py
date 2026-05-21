@@ -113,7 +113,7 @@ def _run_simple(model, dataset, args):
     """Standard CLIP zero-shot (Simple condition)."""
     from src.zero_shot_inference.utils import get_zeroshot_classifier
     tmpl = _get_template(args.simple_template)
-    head = get_zeroshot_classifier(args, model.model, dataset.classnames, tmpl)
+    head = get_zeroshot_classifier(args, model, dataset.classnames, tmpl)
     head = head.to(args.device)
 
     all_preds, all_labels = [], []
@@ -165,7 +165,7 @@ def _run_plus_z(model, dataset, args):
     stub.num_factor_value = len(template_list)
 
     head = get_zeroshot_classifier_flat_advance(
-        stub, model.model, dataset.classnames, template_list
+        stub, model, dataset.classnames, template_list
     ).to(args.device)
 
     return classify_twostep(model, head, dataset, stub,
