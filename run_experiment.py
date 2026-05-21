@@ -109,10 +109,15 @@ def _args_stub(args, **overrides):
     return stub
 
 
-def _run_simple(model, dataset, args):
-    """Standard CLIP zero-shot (Simple condition)."""
+def _run_condition(model, dataset, args, template_name, condition_label):
+    """
+    Standard zero-shot inference for Simple or Domain conditions.
+    template_name: the template variable name to look up (e.g. 'simple_template'
+                   or 'eurosat_main_template').
+    condition_label: 'simple' or 'domain', used only for the print line.
+    """
     from src.zero_shot_inference.utils import get_zeroshot_classifier
-    tmpl = _get_template(args.simple_template)
+    tmpl = _get_template(template_name)
     head = get_zeroshot_classifier(args, model, dataset.classnames, tmpl)
     head = head.to(args.device)
 
@@ -134,13 +139,13 @@ def _run_simple(model, dataset, args):
     labels = torch.cat(all_labels).numpy()
     correct = (preds == labels).astype(int).tolist()
     acc = float(np.mean(correct)) * 100.0
-    print(f"[Simple] Accuracy: {acc:.2f}%")
+    print(f"[{condition_label}] Accuracy: {acc:.2f}%")
 
     n_classes = len(dataset.classnames)
     report    = confusion_matrix_report(preds, labels, dataset.classnames)
 
     return {
-        "condition": "simple",
+        "condition": condition_label,
         "model":     args.model,
         "dataset":   args.dataset,
         "accuracy":  acc,
@@ -210,22 +215,20 @@ def main():
     # --- Simple ---
     if not args.skip_simple:
         print("\n[1/3] Simple (baseline CLIP)")
-        simple_results = _run_simple(model, dataset, args)
+        simple_results = _run_condition(model, dataset, args,
+                                         args.simple_template, "simple")
         simple_results["condition"] = "simple"
         _save_condition(simple_results, args.save_path, args.save_name, "simple")
         collected["simple"] = simple_results
 
     # --- Domain ---
-    if not args.skip_domain and args.domain_template != args.simple_template:
-        print("\n[2/3] Domain")
-        # Domain is just a different simple template with richer class descriptions
-        domain_args = _args_stub(args, simple_template=args.domain_template)
-        domain_results = _run_simple(model, dataset, domain_args)
+    if not args.skip_domain:
+        print("\n[2/3] Domain (main_template without factors)")
+        domain_results = _run_condition(model, dataset, args,
+                                        args.main_template, "domain")
         domain_results["condition"] = "domain"
         _save_condition(domain_results, args.save_path, args.save_name, "domain")
         collected["domain"] = domain_results
-    else:
-        print("\n[2/3] Domain — skipped (same as simple or --skip_domain set)")
 
     # --- +Z ---
     print("\n[3/3] +Z (PerceptionCLIP contextual)")

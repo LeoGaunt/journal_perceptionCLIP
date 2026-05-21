@@ -7,7 +7,7 @@ DATA="./datasets/data/fish"
 FACTORS="in,size,amount,location,liveness"
 MAIN="fish_main_template"
 FACTOR_T="fish_factor_templates"
-SIMPLE="fish_template"
+SIMPLE="simple_template"
 
 for MODEL in \
     "ViT-B/16" \
