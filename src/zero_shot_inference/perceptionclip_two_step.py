@@ -107,8 +107,8 @@ def main(args):
     if args.factors is None:
         raise ValueError("Please provide --factors")
 
-    main_template    = getattr(templates, args.main_template)
-    factor_templates = getattr(templates, args.factor_templates)
+    main_template    = _get_template(args.main_template)
+    factor_templates = _get_template(args.factor_templates)
     composite        = generate_composite_factors(factor_templates,
                                                   selected_factors=args.factors)
     template_list    = compose_template(main_template, composite)

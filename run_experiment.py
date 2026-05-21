@@ -32,9 +32,26 @@ import os
 import types
 import torch
 
+import types as _types
+
 import src.datasets as datasets
 import src.templates as templates
 from src.models.modeling import VLMEncoder
+
+
+def _get_template(name: str):
+    """
+    Safely retrieve a template variable from src.templates by name.
+
+    When __init__.py does `from .eurosat_template import *`, Python sets
+    templates.eurosat_template to the submodule object as a side effect of
+    the import, even though a same-named list variable is also exported.
+    This helper detects that and fetches the variable from inside the module.
+    """
+    obj = getattr(templates, name)
+    if isinstance(obj, _types.ModuleType):
+        obj = getattr(obj, name)
+    return obj
 from src.datasets.common import get_dataloader, maybe_dictionarize
 from src.models import utils as model_utils
 from src.zero_shot_inference.utils import (
@@ -95,7 +112,7 @@ def _args_stub(args, **overrides):
 def _run_simple(model, dataset, args):
     """Standard CLIP zero-shot (Simple condition)."""
     from src.zero_shot_inference.utils import get_zeroshot_classifier
-    tmpl = getattr(templates, args.simple_template)
+    tmpl = _get_template(args.simple_template)
     head = get_zeroshot_classifier(args, model.model, dataset.classnames, tmpl)
     head = head.to(args.device)
 
@@ -141,8 +158,8 @@ def _run_plus_z(model, dataset, args):
     """PerceptionCLIP +Z condition."""
     stub = _args_stub(args, num_attrs=2, num_labels=len(dataset.classnames),
                       eval_trainset=False, eval_group=False)
-    main_tmpl    = getattr(templates, args.main_template)
-    factor_tmpl  = getattr(templates, args.factor_templates)
+    main_tmpl    = _get_template(args.main_template)
+    factor_tmpl  = _get_template(args.factor_templates)
     composite    = generate_composite_factors(factor_tmpl, selected_factors=args.factors)
     template_list = compose_template(main_tmpl, composite)
     stub.num_factor_value = len(template_list)
