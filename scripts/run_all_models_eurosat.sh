@@ -9,7 +9,7 @@ DATA="./datasets/data"
 FACTORS="condition,source"
 MAIN="eurosat_main_template"
 FACTOR_T="eurosat_factor_templates"
-SIMPLE="eurosat_template"
+SIMPLE="simple_template"
 
 for MODEL in \
     "ViT-B/16" \
