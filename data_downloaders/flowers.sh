@@ -2,7 +2,7 @@
 
 set -e
 
-DEST="/content/dissertation_perceptionCLIP/datasets/data/flowers"
+DEST="/content/journal_perceptionCLIP/datasets/data/flowers"
 URL_BASE="http://www.robots.ox.ac.uk/~vgg/data/flowers/17"
 
 # Class names (0-indexed, 80 images each, sequential ordering)
