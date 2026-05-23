@@ -3,7 +3,7 @@
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 DATASET="Flowers"
-DATA="./data/flowers"
+DATA="./datasets/data/flowers"
 FACTORS="background,illumination,petals,quality"
 MAIN="flowers_main_template"
 FACTOR_T="flowers_factor_templates"

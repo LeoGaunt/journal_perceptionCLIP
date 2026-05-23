@@ -3,7 +3,7 @@
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 DATASET="UCM"
-DATA="./data/ucm"
+DATA="./datasets/data/ucm"
 FACTORS="condition,source,land"
 MAIN="ucm_main_template"
 FACTOR_T="ucm_factor_templates"

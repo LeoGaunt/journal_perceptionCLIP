@@ -3,7 +3,7 @@
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 DATASET="Marine"
-DATA="./data/marine"
+DATA="./datasets/data/marine"
 FACTORS="in,size,amount,location,state"
 MAIN="marine_main_template"
 FACTOR_T="marine_factor_templates"

@@ -3,7 +3,7 @@
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 DATASET="Dissertation"
-DATA="./data/dissertation"
+DATA="./datasets/data/dissertation"
 FACTORS="on,direction,amount,weather,decker"
 MAIN="dissertation_main_template"
 FACTOR_T="dissertation_factor_templates"
