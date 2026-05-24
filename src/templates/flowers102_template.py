@@ -20,11 +20,11 @@ flowers102_factor_templates = {
         "bright": ["sunny", "bright"],
         "dark": ["dark", "dim"],
     },
-    "petals": {
+    "condition": {
         "normal": [""],
-        "bloomed": ["fully bloomed"],
-        "budding": ["budding"],
-        "wilting": ["wilting"],
+        "cool": ["cool"],
+        "nice": ["nice"],
+        "weird": ["weird"],
     },
     "quality": {
         "others": [""],
