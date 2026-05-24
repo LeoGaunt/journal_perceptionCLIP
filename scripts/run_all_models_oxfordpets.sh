@@ -5,7 +5,7 @@
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 DATASET="OxfordPets"
-DATA="./datasets/data/oxford-iiit-pet"
+DATA="./datasets/data"
 MAIN="oxfordpets_main_template"
 FACTOR_T="oxfordpets_factor_templates"
 SIMPLE="simple_template"
