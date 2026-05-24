@@ -9,6 +9,7 @@ DATA="./datasets/data"
 MAIN="oxfordpets_main_template"
 FACTOR_T="oxfordpets_factor_templates"
 SIMPLE="simple_template"
+FACTORS="species,background,pose,interaction"
 
 for MODEL in \
     "ViT-B/16:512" \

@@ -9,6 +9,7 @@ DATA="./datasets/data/flowers102"
 MAIN="flowers102_main_template"
 FACTOR_T="flowers102_factor_templates"
 SIMPLE="simple_template"
+FACTORS="background,illumination,petals,quality"
 
 for MODEL in \
     "ViT-B/16:512" \
