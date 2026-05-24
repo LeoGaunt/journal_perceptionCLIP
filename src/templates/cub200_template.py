@@ -27,14 +27,11 @@ cub200_factor_templates = {
         "human": ["with human"],
         "branch": ["on a branch"],
     },
-    "pose": {
-        "others": [""],
-        "perching": ["perching"],
-        "flying": ["in flight"],
-        "swimming": ["swimming"],
-        "walking": ["walking"],
-        "standing": ["standing"],
-        "preening": ["preening"],
+    "condition": {
+        "normal": [""],
+        "cool": ["cool"],
+        "nice": ["nice"],
+        "weird": ["weird"],
     },
 
 }
