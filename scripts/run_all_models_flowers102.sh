@@ -5,7 +5,7 @@
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 DATASET="Flowers102"
-DATA="./datasets/data/flowers102"
+DATA="./datasets/data"
 MAIN="flowers102_main_template"
 FACTOR_T="flowers102_factor_templates"
 SIMPLE="simple_template"

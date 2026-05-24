@@ -5,7 +5,7 @@
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 DATASET="CUB200"
-DATA="./datasets/data/CUB_200_2011"
+DATA="./datasets/data"
 MAIN="cub200_main_template"
 FACTOR_T="cub200_factor_templates"
 SIMPLE="simple_template"
