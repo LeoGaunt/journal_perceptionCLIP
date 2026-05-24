@@ -9,7 +9,7 @@ DATA="./datasets/data"
 MAIN="cub200_main_template"
 FACTOR_T="cub200_factor_templates"
 SIMPLE="simple_template"
-FACTORS="size,background,light"
+FACTORS="size,background,condition"
 
 for MODEL in \
     "ViT-B/16:512" \
