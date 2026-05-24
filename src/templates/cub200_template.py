@@ -27,11 +27,10 @@ cub200_factor_templates = {
         "human": ["with human"],
         "branch": ["on a branch"],
     },
-    "condition": {
+    "light": {
         "normal": [""],
-        "cool": ["cool"],
-        "nice": ["nice"],
-        "weird": ["weird"],
+        "bright": ["bright"],
+        "dark": ["dark"],
     },
 
 }
