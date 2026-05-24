@@ -6,3 +6,4 @@ from .fish import Fish
 from .marine import Marine
 from .ucm import UCM
 from .flowers import Flowers
+from .cub200 import CUB200

@@ -8,3 +8,4 @@ from .fish_template import *
 from .marine_template import *
 from .ucm_template import *
 from .flowers_template import *
+from .cub200_template import *
