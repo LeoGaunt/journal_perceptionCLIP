@@ -17,7 +17,7 @@ for MODEL in \
     "RN50x4:256" \
     "OpenCLIP-ViT-H-14:128" \
     "MetaCLIP-ViT-B-16:512" \
-    "SigLIP-ViT-B-16:512"
+    "SigLIP2-ViT-B-16:512"
 do
     MODEL_NAME="${MODEL%%:*}"
     BATCH="${MODEL##*:}"

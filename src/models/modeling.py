@@ -17,8 +17,8 @@ MetaCLIP (via open_clip with metaclip weights):
     MetaCLIP-ViT-H-14          (metaclip_fullcc)
 
 SigLIP (via open_clip with webli weights):
-    SigLIP-ViT-B-16            (webli)
-    SigLIP-ViT-L-16-384        (webli)
+    SigLIP2-ViT-B-16            (webli)
+    SigLIP2-ViT-L-16-384        (webli)
 
 Usage
 -----
@@ -52,8 +52,8 @@ _OPENCLIP_REGISTRY = {
     "MetaCLIP-ViT-L-14":      ("ViT-L-14",            "metaclip_fullcc"),
     "MetaCLIP-ViT-H-14":      ("ViT-H-14",            "metaclip_fullcc"),
     # SigLIP (sigmoid contrastive objective; zero-shot inference unchanged)
-    "SigLIP-ViT-B-16":        ("ViT-B-16-SigLIP",     "webli"),
-    "SigLIP-ViT-L-16-384":    ("ViT-L-16-384-SigLIP", "webli"),
+    "SigLIP2-ViT-B-16":     ("ViT-B-16-SigLIP2",     "webli"),
+    "SigLIP2-ViT-L-16-384": ("ViT-L-16-SigLIP2-384", "webli"),
 }
 
 # Original CLIP model strings (loaded via openai/CLIP library)
