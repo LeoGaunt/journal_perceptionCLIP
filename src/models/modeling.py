@@ -1,29 +1,35 @@
 """
 modeling.py — Unified VLM encoder supporting multiple backends.
 
-Supported model strings
------------------------
-Original CLIP (via openai/CLIP):
-    ViT-B/16, ViT-L/14@336px, RN50x4, ViT-B/32, RN50, RN101
+Model groups for the TPAMI paper
+----------------------------------
 
-OpenCLIP — LAION-trained (via mlfoundations/open_clip):
-    OpenCLIP-ViT-H-14          (laion2b_s32b_b79k)
-    OpenCLIP-ViT-L-14          (laion2b_s32b_b82k)
-    OpenCLIP-ViT-B-16          (laion2b_s34b_b88k)
+Scale group (all LAION-2B, softmax, transformer — only size changes):
+    OpenCLIP-ViT-B-16   ViT-B-16   / laion2b_s34b_b88k   86M
+    OpenCLIP-ViT-L-14   ViT-L-14   / laion2b_s32b_b82k  307M
+    OpenCLIP-ViT-H-14   ViT-H-14   / laion2b_s32b_b79k  632M
 
-MetaCLIP (via open_clip with metaclip weights):
-    MetaCLIP-ViT-B-16          (metaclip_400m)
-    MetaCLIP-ViT-L-14          (metaclip_fullcc)
-    MetaCLIP-ViT-H-14          (metaclip_fullcc)
+Architecture group (all LAION-2B, softmax — only image encoder architecture changes):
+    OpenCLIP-ViT-B-16   ViT-B-16          / laion2b_s34b_b88k   86M  transformer
+    ConvNeXt-B          convnext_base_w    / laion2b_s13b_b82k   88M  modern CNN
 
-SigLIP (via open_clip with webli weights):
-    SigLIP2-ViT-B-16            (webli)
-    SigLIP2-ViT-L-16-384        (webli)
+Objective group (all ~ViT-B-16 scale — only training loss changes):
+    OpenCLIP-ViT-B-16   ViT-B-16          / laion2b_s34b_b88k   softmax contrastive
+    SigLIP-ViT-B-16     ViT-B-16-SigLIP   / webli                sigmoid v1
+    SigLIP2-ViT-B-16    ViT-B-16-SigLIP2  / webli                sigmoid v2
+
+Data group (all ViT-B-16 architecture, softmax — only training data changes):
+    OpenCLIP-ViT-B-16   ViT-B-16 / laion2b_s34b_b88k    LAION-2B (400M subset)
+    MetaCLIP-ViT-B-16   ViT-B-16 / metaclip_400m         MetaCLIP-400M curated
+    DataComp-ViT-B-16   ViT-B-16 / datacomp_xl_s13b_b90k DataComp-XL curated
+
+Original CLIP (OpenAI, via openai/CLIP — kept for backward compatibility):
+    ViT-B/16, ViT-L/14, ViT-L/14@336px, RN50, RN50x4, RN101, ViT-B/32
 
 Usage
 -----
 All models expose the same interface:
-    encoder.tokenize(texts)          <- USE THIS, never clip.tokenize directly
+    encoder.tokenize(texts)       <- always use this, never clip.tokenize directly
     encoder.encode_image(images)
     encoder.encode_text(token_ids)
     encoder.logit_scale
@@ -43,20 +49,33 @@ from src.models import utils
 # Registry: maps model-string -> (open_clip_arch, pretrained_tag)
 # ---------------------------------------------------------------------------
 _OPENCLIP_REGISTRY = {
-    # LAION-trained
-    "OpenCLIP-ViT-H-14":      ("ViT-H-14",            "laion2b_s32b_b79k"),
-    "OpenCLIP-ViT-L-14":      ("ViT-L-14",            "laion2b_s32b_b82k"),
-    "OpenCLIP-ViT-B-16":      ("ViT-B-16",            "laion2b_s34b_b88k"),
-    # MetaCLIP
-    "MetaCLIP-ViT-B-16":      ("ViT-B-16",            "metaclip_400m"),
-    "MetaCLIP-ViT-L-14":      ("ViT-L-14",            "metaclip_fullcc"),
-    "MetaCLIP-ViT-H-14":      ("ViT-H-14",            "metaclip_fullcc"),
-    # SigLIP (sigmoid contrastive objective; zero-shot inference unchanged)
-    "SigLIP2-ViT-B-16":     ("ViT-B-16-SigLIP2",     "webli"),
+
+    # ── Scale group (all LAION-2B) ──────────────────────────────────────────
+    "OpenCLIP-ViT-B-16":  ("ViT-B-16",  "laion2b_s34b_b88k"),   #  86M
+    "OpenCLIP-ViT-L-14":  ("ViT-L-14",  "laion2b_s32b_b82k"),   # 307M
+    "OpenCLIP-ViT-H-14":  ("ViT-H-14",  "laion2b_s32b_b79k"),   # 632M
+
+    # ── Architecture group (LAION-2B, ~88M) ─────────────────────────────────
+    # OpenCLIP-ViT-B-16 (above) is the transformer baseline
+    "ConvNeXt-B":         ("convnext_base_w", "laion2b_s13b_b82k"),  # modern CNN
+
+    # ── Objective group (ViT-B-16 scale) ────────────────────────────────────
+    # OpenCLIP-ViT-B-16 (above) is the softmax contrastive baseline
+    "SigLIP-ViT-B-16":    ("ViT-B-16-SigLIP",  "webli"),   # sigmoid v1
+    "SigLIP2-ViT-B-16":   ("ViT-B-16-SigLIP2", "webli"),   # sigmoid v2
+
+    # ── Data group (ViT-B-16 architecture) ──────────────────────────────────
+    # OpenCLIP-ViT-B-16 (above) is the LAION-2B baseline
+    "MetaCLIP-ViT-B-16":  ("ViT-B-16", "metaclip_400m"),          # MetaCLIP-400M
+    "DataComp-ViT-B-16":  ("ViT-B-16", "datacomp_xl_s13b_b90k"),  # DataComp-XL
+
+    # ── Legacy / unused (kept for backward compatibility) ────────────────────
+    "MetaCLIP-ViT-L-14":  ("ViT-L-14", "metaclip_fullcc"),
+    "MetaCLIP-ViT-H-14":  ("ViT-H-14", "metaclip_fullcc"),
     "SigLIP2-ViT-L-16-384": ("ViT-L-16-SigLIP2-384", "webli"),
 }
 
-# Original CLIP model strings (loaded via openai/CLIP library)
+# Original OpenAI CLIP model strings (loaded via openai/CLIP library)
 _ORIGINAL_CLIP = {
     "ViT-B/16", "ViT-B/32", "ViT-L/14", "ViT-L/14@336px",
     "RN50", "RN50x4", "RN50x16", "RN50x64", "RN101",
@@ -68,8 +87,7 @@ class VLMEncoder(torch.nn.Module):
     Unified wrapper around any supported vision-language encoder.
 
     Always call self.tokenize(texts) rather than clip.tokenize() or
-    open_clip.tokenize() — this ensures the correct vocabulary and
-    context length for each backend.
+    open_clip.tokenize() directly.
     """
 
     def __init__(self, args, keep_lang: bool = True):
@@ -100,23 +118,15 @@ class VLMEncoder(torch.nn.Module):
             raise ValueError(
                 f"Unknown model '{args.model}'.\n"
                 f"Supported original CLIP: {sorted(_ORIGINAL_CLIP)}\n"
-                f"Supported OpenCLIP/MetaCLIP/SigLIP: {sorted(_OPENCLIP_REGISTRY)}"
+                f"Supported OpenCLIP registry: {sorted(_OPENCLIP_REGISTRY)}"
             )
-
-    # ------------------------------------------------------------------
-    # Tokenisation — always call this, never clip.tokenize() directly
-    # ------------------------------------------------------------------
 
     def tokenize(self, texts, context_length: int = 77):
         """Return a LongTensor of token ids for any backend."""
         if self._backend == "clip":
             return clip.tokenize(texts, context_length=context_length)
         else:
-            return self._tokenizer(texts)   # open_clip returns tensor directly
-
-    # ------------------------------------------------------------------
-    # Feature encoding
-    # ------------------------------------------------------------------
+            return self._tokenizer(texts)
 
     @property
     def logit_scale(self):
@@ -137,10 +147,6 @@ class VLMEncoder(torch.nn.Module):
             return self.encode_text(text)
         raise ValueError("Provide at least one of images or text.")
 
-    # ------------------------------------------------------------------
-    # Persistence
-    # ------------------------------------------------------------------
-
     def save(self, filename):
         print(f"Saving VLMEncoder to {filename}")
         utils.torch_save(self, filename)
@@ -155,9 +161,9 @@ class VLMEncoder(torch.nn.Module):
 CLIPEncoder = VLMEncoder
 
 
-# ------------------------------------------------------------------
-# Classification head (unchanged from original)
-# ------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# Classification head
+# ---------------------------------------------------------------------------
 
 class ClassificationHead(torch.nn.Linear):
     def __init__(self, normalize, weights, biases=None, shape=(512, 1000)):
@@ -190,9 +196,9 @@ class ClassificationHead(torch.nn.Linear):
 class ImageClassifier(torch.nn.Module):
     def __init__(self, image_encoder, classification_head, process_images=True):
         super().__init__()
-        self.image_encoder     = image_encoder
+        self.image_encoder       = image_encoder
         self.classification_head = classification_head
-        self.process_images    = process_images
+        self.process_images      = process_images
         if self.image_encoder is not None:
             self.train_preprocess = self.image_encoder.train_preprocess
             self.val_preprocess   = self.image_encoder.val_preprocess
