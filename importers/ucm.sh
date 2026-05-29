@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set +e
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 DATASET_DIR="$ROOT_DIR/datasets/data/ucm"
