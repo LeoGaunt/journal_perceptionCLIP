@@ -9,9 +9,9 @@
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 MODELS=(
-    "OpenCLIP-ViT-B-16:2048"
-    "OpenCLIP-ViT-L-14:1028"
-    "OpenCLIP-ViT-H-14:1028"
+    "OpenCLIP-ViT-B-16:8192"
+    "OpenCLIP-ViT-L-14:4096"
+    "OpenCLIP-ViT-H-14:4096"
 )
 
 # Dataset configs: "NAME|DATA_PATH|FACTORS|MAIN_TEMPLATE|FACTOR_TEMPLATE"
