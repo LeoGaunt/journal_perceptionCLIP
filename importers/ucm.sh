@@ -16,61 +16,33 @@ echo "Extracting..."
 unzip -q ucm.zip
 rm ucm.zip
 
-EXTRACTED_DIR=$(find . -maxdepth 1 -type d -name "*UCMerced*" | head -n 1)
+IMAGES_DIR=$(find . -type d -name "Images" | head -n 1)
 
-if [ -z "$EXTRACTED_DIR" ]; then
-    echo "Could not find extracted dataset folder"
+if [ -z "$IMAGES_DIR" ]; then
+    echo "Could not find Images directory"
     exit 1
 fi
 
-echo "Flattening dataset structure..."
+echo "Found Images folder: $IMAGES_DIR"
+echo "Flattening dataset into $DATASET_DIR..."
 
 shopt -s dotglob
-mv "$EXTRACTED_DIR"/* "$DATASET_DIR"/ 2>/dev/null || true
-rmdir "$EXTRACTED_DIR" 2>/dev/null || true
 
-CLASS_ROOT=$(find . -type d -name "Images" | head -n 1)
+for class_dir in "$IMAGES_DIR"/*/; do
+    class_name=$(basename "$class_dir")
 
-if [ -z "$CLASS_ROOT" ]; then
-    echo "Could not find Images directory."
-    exit 1
-fi
+    echo "Moving $class_name"
 
-declare -A RENAMES=(
-    ["agricultural"]="agricultural land"
-    ["airplane"]="airplane(s)"
-    ["baseballdiamond"]="baseball diamond"
-    ["beach"]="beach"
-    ["buildings"]="buildings"
-    ["chaparral"]="chaparral"
-    ["denseresidential"]="dense residential"
-    ["forest"]="forest"
-    ["freeway"]="freeway"
-    ["golfcourse"]="golf course"
-    ["harbor"]="harbor"
-    ["intersection"]="intersection"
-    ["mediumresidential"]="medium residential"
-    ["mobilehomepark"]="mobile home park"
-    ["overpass"]="overpass"
-    ["parkinglot"]="parking lot"
-    ["river"]="river"
-    ["runway"]="runway"
-    ["sparseresidential"]="sparse residential"
-    ["storagetanks"]="storage tanks"
-    ["tenniscourt"]="tennis court"
-)
-
-echo "Renaming class folders..."
-
-for OLD in "${!RENAMES[@]}"; do
-    SRC="$CLASS_ROOT/$OLD"
-    DST="$CLASS_ROOT/${RENAMES[$OLD]}"
-
-    if [ -d "$SRC" ]; then
-        mv "$SRC" "$DST" 2>/dev/null || true
-    fi
+    # move folder up to dataset root
+    mv "$class_dir" "$DATASET_DIR/" 2>/dev/null || true
 done
+
+rm -rf "$IMAGES_DIR" 2>/dev/null || true
+
+# remove top-level wrapper if it still exists
+EXTRACTED_ROOT=$(find . -maxdepth 1 -type d -name "*UCMerced*" | head -n 1)
+rm -rf "$EXTRACTED_ROOT" 2>/dev/null || true
 
 echo "Done."
 echo "Final structure:"
-ls "$CLASS_ROOT"
+ls "$DATASET_DIR"
