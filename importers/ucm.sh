@@ -16,7 +16,19 @@ echo "Extracting..."
 unzip -q ucm.zip
 rm ucm.zip
 
-# Find the directory containing the class folders
+EXTRACTED_DIR=$(find . -maxdepth 1 -type d -name "*UCMerced*" | head -n 1)
+
+if [ -z "$EXTRACTED_DIR" ]; then
+    echo "Could not find extracted dataset folder"
+    exit 1
+fi
+
+echo "Flattening dataset structure..."
+
+shopt -s dotglob
+mv "$EXTRACTED_DIR"/* "$DATASET_DIR"/ 2>/dev/null || true
+rmdir "$EXTRACTED_DIR" 2>/dev/null || true
+
 CLASS_ROOT=$(find . -type d -name "Images" | head -n 1)
 
 if [ -z "$CLASS_ROOT" ]; then
@@ -51,9 +63,14 @@ declare -A RENAMES=(
 echo "Renaming class folders..."
 
 for OLD in "${!RENAMES[@]}"; do
-    if [ -d "$CLASS_ROOT/$OLD" ]; then
-        mv "$CLASS_ROOT/$OLD" "$CLASS_ROOT/${RENAMES[$OLD]}"
+    SRC="$CLASS_ROOT/$OLD"
+    DST="$CLASS_ROOT/${RENAMES[$OLD]}"
+
+    if [ -d "$SRC" ]; then
+        mv "$SRC" "$DST" 2>/dev/null || true
     fi
 done
 
 echo "Done."
+echo "Final structure:"
+ls "$CLASS_ROOT"
