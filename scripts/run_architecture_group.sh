@@ -9,8 +9,8 @@
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 MODELS=(
-    "OpenCLIP-ViT-B-16:512"
-    "ConvNeXt-B:512"
+    "OpenCLIP-ViT-B-16:8192"
+    "ConvNeXt-B:8192"
 )
 
 DATASETS=(

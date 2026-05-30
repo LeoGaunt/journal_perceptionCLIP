@@ -15,9 +15,9 @@
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 MODELS=(
-    "OpenCLIP-ViT-B-16:512"
-    "SigLIP-ViT-B-16:512"
-    "SigLIP2-ViT-B-16:512"
+    "OpenCLIP-ViT-B-16:8192"
+    "SigLIP-ViT-B-16:8192"
+    "SigLIP2-ViT-B-16:8192"
 )
 
 DATASETS=(
