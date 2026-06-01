@@ -85,6 +85,12 @@ def _dataset_configs(root: str):
             "location":   os.path.join(root, "dissertation"),
             "note":       "ImageFolder — location IS the dissertation folder",
         },
+        {
+            "name":     "ImageNet",
+            "class":    "ImageNet",
+            "location": os.path.join(root, "imagenet"),
+            "note":     "ImageFolder — expects val/ subfolder with 1000 synset dirs",
+        },
     ]
 
 
