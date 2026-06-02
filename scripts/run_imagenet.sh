@@ -140,7 +140,6 @@ if $RUN_ARCH; then
     echo "════════════════════════════════════════════════════════"
     echo ""
 
-    run_experiment "Architecture" "OpenCLIP-ViT-B-16" 8192
     run_experiment "Architecture" "ConvNeXt-B"        2048
 
     echo "✓ Architecture group complete → ./results/architecture/ImageNet/"
@@ -160,7 +159,6 @@ if $RUN_DATA; then
     echo "════════════════════════════════════════════════════════"
     echo ""
 
-    run_experiment "Data" "OpenCLIP-ViT-B-16"  8192
     run_experiment "Data" "MetaCLIP-ViT-B-16"  8192
     run_experiment "Data" "DataComp-ViT-B-16"  8192
 
@@ -183,7 +181,6 @@ if $RUN_OBJ; then
     echo "════════════════════════════════════════════════════════"
     echo ""
 
-    run_experiment "Objective" "OpenCLIP-ViT-B-16" 8192
     run_experiment "Objective" "SigLIP-ViT-B-16"   8192
     run_experiment "Objective" "SigLIP2-ViT-B-16"  8192
 
