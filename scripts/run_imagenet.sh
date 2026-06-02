@@ -42,7 +42,7 @@ export PYTHONPATH="$PYTHONPATH:$PWD"
 # ── Shared ImageNet config ───────────────────────────────────────────────────
 DATASET="ImageNet"
 DATA_LOCATION="./datasets/data/imagenet"
-FACTORS="orientation,background,quality,illumination,quantity,perspective,art,medium,condition,color_scheme,tool"
+FACTORS="background,quality,condition"
 MAIN_TEMPLATE="imagenet_main_template"
 FACTOR_TEMPLATE="imagenet_factor_templates"
 
