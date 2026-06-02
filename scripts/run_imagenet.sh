@@ -121,9 +121,9 @@ if $RUN_SCALE; then
     echo "════════════════════════════════════════════════════════"
     echo ""
 
-    run_experiment "Scale" "OpenCLIP-ViT-B-16" 8192
-    run_experiment "Scale" "OpenCLIP-ViT-L-14" 4096
-    run_experiment "Scale" "OpenCLIP-ViT-H-14" 4096
+    run_experiment "Scale" "OpenCLIP-ViT-B-16" 1024
+    run_experiment "Scale" "OpenCLIP-ViT-L-14" 512
+    run_experiment "Scale" "OpenCLIP-ViT-H-14" 512
 
     echo "✓ Scale group complete → ./results/scale/ImageNet/"
     echo ""
@@ -140,8 +140,8 @@ if $RUN_ARCH; then
     echo "════════════════════════════════════════════════════════"
     echo ""
 
-    run_experiment "Architecture" "OpenCLIP-ViT-B-16" 8192
-    run_experiment "Architecture" "ConvNeXt-B"        2048
+    run_experiment "Architecture" "OpenCLIP-ViT-B-16" 1024
+    run_experiment "Architecture" "ConvNeXt-B"        256
 
     echo "✓ Architecture group complete → ./results/architecture/ImageNet/"
     echo ""
@@ -160,9 +160,9 @@ if $RUN_DATA; then
     echo "════════════════════════════════════════════════════════"
     echo ""
 
-    run_experiment "Data" "OpenCLIP-ViT-B-16"  8192
-    run_experiment "Data" "MetaCLIP-ViT-B-16"  8192
-    run_experiment "Data" "DataComp-ViT-B-16"  8192
+    run_experiment "Data" "OpenCLIP-ViT-B-16"  1024
+    run_experiment "Data" "MetaCLIP-ViT-B-16"  1024
+    run_experiment "Data" "DataComp-ViT-B-16"  1024
 
     echo "✓ Data group complete → ./results/data/ImageNet/"
     echo ""
@@ -183,9 +183,9 @@ if $RUN_OBJ; then
     echo "════════════════════════════════════════════════════════"
     echo ""
 
-    run_experiment "Objective" "OpenCLIP-ViT-B-16" 8192
-    run_experiment "Objective" "SigLIP-ViT-B-16"   8192
-    run_experiment "Objective" "SigLIP2-ViT-B-16"  8192
+    run_experiment "Objective" "OpenCLIP-ViT-B-16" 1024
+    run_experiment "Objective" "SigLIP-ViT-B-16"   1024
+    run_experiment "Objective" "SigLIP2-ViT-B-16"  1024
 
     echo "✓ Objective group complete → ./results/objective/ImageNet/"
     echo ""
