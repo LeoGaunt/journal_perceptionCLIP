@@ -5,8 +5,8 @@ Plot,Comparison,Model,Dataset,Δp (pp),95% CI Lower,95% CI Upper,Confidence Inte
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-B-16 (86M),Fish,7.24,6.43,8.12,"[6.43, 8.12]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-B-16 (86M),Flwrs102,2.7,2.1,3.32,"[2.10, 3.32]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-B-16 (86M),ImgNet,0.05,-0.15,0.24,"[-0.15, 0.24]",False
-(a) Scale,"same LAION-2B data, increasing capacity",ViT-B-16 (86M),Marine,1.21,0.79,1.63,"[0.79, 1.63]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-B-16 (86M),OxPets,0.71,0.0,1.47,"[0.00, 1.47]",False
+(a) Scale,"same LAION-2B data, increasing capacity",ViT-B-16 (86M),Sea Animals,1.21,0.79,1.63,"[0.79, 1.63]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-B-16 (86M),UCM,-0.62,-2.48,1.33,"[-2.48, 1.33]",False
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-H-14 (632M),COCO†,-0.65,-0.96,-0.35,"[-0.96, -0.35]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-H-14 (632M),CUB200,-0.19,-0.71,0.36,"[-0.71, 0.36]",False
@@ -14,8 +14,8 @@ Plot,Comparison,Model,Dataset,Δp (pp),95% CI Lower,95% CI Upper,Confidence Inte
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-H-14 (632M),Fish,9.7,8.8,10.6,"[8.80, 10.60]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-H-14 (632M),Flwrs102,0.7,0.08,1.3,"[0.08, 1.30]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-H-14 (632M),ImgNet,0.36,0.16,0.55,"[0.16, 0.55]",True
-(a) Scale,"same LAION-2B data, increasing capacity",ViT-H-14 (632M),Marine,1.52,1.17,1.9,"[1.17, 1.90]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-H-14 (632M),OxPets,2.48,1.77,3.19,"[1.77, 3.19]",True
+(a) Scale,"same LAION-2B data, increasing capacity",ViT-H-14 (632M),Sea Animals,1.52,1.17,1.9,"[1.17, 1.90]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-H-14 (632M),UCM,0.9,-0.76,2.57,"[-0.76, 2.57]",False
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-L-14 (307M),COCO†,-0.76,-1.11,-0.4,"[-1.11, -0.40]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-L-14 (307M),CUB200,-0.24,-0.86,0.41,"[-0.86, 0.41]",False
@@ -23,8 +23,8 @@ Plot,Comparison,Model,Dataset,Δp (pp),95% CI Lower,95% CI Upper,Confidence Inte
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-L-14 (307M),Fish,2.44,1.71,3.18,"[1.71, 3.18]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-L-14 (307M),Flwrs102,1.11,0.62,1.63,"[0.62, 1.63]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-L-14 (307M),ImgNet,-0.07,-0.26,0.11,"[-0.26, 0.11]",False
-(a) Scale,"same LAION-2B data, increasing capacity",ViT-L-14 (307M),Marine,1.57,1.23,1.93,"[1.23, 1.93]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-L-14 (307M),OxPets,2.15,1.5,2.86,"[1.50, 2.86]",True
+(a) Scale,"same LAION-2B data, increasing capacity",ViT-L-14 (307M),Sea Animals,1.57,1.23,1.93,"[1.23, 1.93]",True
 (a) Scale,"same LAION-2B data, increasing capacity",ViT-L-14 (307M),UCM,4.95,3.1,6.86,"[3.10, 6.86]",True
 (b) Architecture,"same LAION-2B data, ∴88M params",ConvNeXt-B (modern CNN),COCO†,-0.08,-0.28,0.1,"[-0.28, 0.10]",False
 (b) Architecture,"same LAION-2B data, ∴88M params",ConvNeXt-B (modern CNN),CUB200,-0.66,-1.26,-0.03,"[-1.26, -0.03]",True
@@ -32,8 +32,8 @@ Plot,Comparison,Model,Dataset,Δp (pp),95% CI Lower,95% CI Upper,Confidence Inte
 (b) Architecture,"same LAION-2B data, ∴88M params",ConvNeXt-B (modern CNN),Fish,2.92,2.16,3.69,"[2.16, 3.69]",True
 (b) Architecture,"same LAION-2B data, ∴88M params",ConvNeXt-B (modern CNN),Flwrs102,0.44,-0.18,1.02,"[-0.18, 1.02]",False
 (b) Architecture,"same LAION-2B data, ∴88M params",ConvNeXt-B (modern CNN),ImgNet,-0.19,-0.41,0.03,"[-0.41, 0.03]",False
-(b) Architecture,"same LAION-2B data, ∴88M params",ConvNeXt-B (modern CNN),Marine,1.05,0.61,1.47,"[0.61, 1.47]",True
 (b) Architecture,"same LAION-2B data, ∴88M params",ConvNeXt-B (modern CNN),OxPets,1.94,1.23,2.64,"[1.23, 2.64]",True
+(b) Architecture,"same LAION-2B data, ∴88M params",ConvNeXt-B (modern CNN),Sea Animals,1.05,0.61,1.47,"[0.61, 1.47]",True
 (b) Architecture,"same LAION-2B data, ∴88M params",ConvNeXt-B (modern CNN),UCM,1.24,-0.33,2.81,"[-0.33, 2.81]",False
 (b) Architecture,"same LAION-2B data, ∴88M params",ViT-B-16 (transformer),COCO†,-0.05,-0.3,0.2,"[-0.30, 0.20]",False
 (b) Architecture,"same LAION-2B data, ∴88M params",ViT-B-16 (transformer),CUB200,-0.67,-1.31,-0.02,"[-1.31, -0.02]",True
@@ -41,8 +41,8 @@ Plot,Comparison,Model,Dataset,Δp (pp),95% CI Lower,95% CI Upper,Confidence Inte
 (b) Architecture,"same LAION-2B data, ∴88M params",ViT-B-16 (transformer),Fish,7.24,6.43,8.12,"[6.43, 8.12]",True
 (b) Architecture,"same LAION-2B data, ∴88M params",ViT-B-16 (transformer),Flwrs102,2.7,2.1,3.32,"[2.10, 3.32]",True
 (b) Architecture,"same LAION-2B data, ∴88M params",ViT-B-16 (transformer),ImgNet,0.05,-0.15,0.24,"[-0.15, 0.24]",False
-(b) Architecture,"same LAION-2B data, ∴88M params",ViT-B-16 (transformer),Marine,1.21,0.79,1.63,"[0.79, 1.63]",True
 (b) Architecture,"same LAION-2B data, ∴88M params",ViT-B-16 (transformer),OxPets,0.71,0.0,1.47,"[0.00, 1.47]",False
+(b) Architecture,"same LAION-2B data, ∴88M params",ViT-B-16 (transformer),Sea Animals,1.21,0.79,1.63,"[0.79, 1.63]",True
 (b) Architecture,"same LAION-2B data, ∴88M params",ViT-B-16 (transformer),UCM,-0.62,-2.48,1.33,"[-2.48, 1.33]",False
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",OpenCLIP (softmax),COCO†,-0.05,-0.3,0.2,"[-0.30, 0.20]",False
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",OpenCLIP (softmax),CUB200,-0.67,-1.31,-0.02,"[-1.31, -0.02]",True
@@ -50,8 +50,8 @@ Plot,Comparison,Model,Dataset,Δp (pp),95% CI Lower,95% CI Upper,Confidence Inte
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",OpenCLIP (softmax),Fish,7.24,6.43,8.12,"[6.43, 8.12]",True
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",OpenCLIP (softmax),Flwrs102,2.7,2.1,3.32,"[2.10, 3.32]",True
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",OpenCLIP (softmax),ImgNet,0.05,-0.15,0.24,"[-0.15, 0.24]",False
-(c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",OpenCLIP (softmax),Marine,1.21,0.79,1.63,"[0.79, 1.63]",True
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",OpenCLIP (softmax),OxPets,0.71,0.0,1.47,"[0.00, 1.47]",False
+(c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",OpenCLIP (softmax),Sea Animals,1.21,0.79,1.63,"[0.79, 1.63]",True
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",OpenCLIP (softmax),UCM,-0.62,-2.48,1.33,"[-2.48, 1.33]",False
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",SigLIP (sigmoid v1),COCO†,-0.43,-0.71,-0.18,"[-0.71, -0.18]",True
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",SigLIP (sigmoid v1),CUB200,-0.78,-1.61,0.07,"[-1.61, 0.07]",False
@@ -59,8 +59,8 @@ Plot,Comparison,Model,Dataset,Δp (pp),95% CI Lower,95% CI Upper,Confidence Inte
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",SigLIP (sigmoid v1),Fish,4.82,4.04,5.57,"[4.04, 5.57]",True
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",SigLIP (sigmoid v1),Flwrs102,2.83,2.16,3.53,"[2.16, 3.53]",True
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",SigLIP (sigmoid v1),ImgNet,-0.01,-0.21,0.18,"[-0.21, 0.18]",False
-(c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",SigLIP (sigmoid v1),Marine,1.54,1.17,1.9,"[1.17, 1.90]",True
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",SigLIP (sigmoid v1),OxPets,0.98,0.38,1.64,"[0.38, 1.64]",True
+(c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",SigLIP (sigmoid v1),Sea Animals,1.54,1.17,1.9,"[1.17, 1.90]",True
 (c) Training objective,"softmax vs sigmoid, ViT-B-16 scale",SigLIP (sigmoid v1),UCM,0.1,-1.38,1.62,"[-1.38, 1.62]",False
 (d) Training data,same ViT-B-16 architecture,DataComp (XL filtered),COCO†,-0.6,-0.96,-0.25,"[-0.96, -0.25]",True
 (d) Training data,same ViT-B-16 architecture,DataComp (XL filtered),CUB200,-0.35,-0.88,0.19,"[-0.88, 0.19]",False
@@ -68,8 +68,8 @@ Plot,Comparison,Model,Dataset,Δp (pp),95% CI Lower,95% CI Upper,Confidence Inte
 (d) Training data,same ViT-B-16 architecture,DataComp (XL filtered),Fish,3.22,2.47,3.96,"[2.47, 3.96]",True
 (d) Training data,same ViT-B-16 architecture,DataComp (XL filtered),Flwrs102,-0.1,-0.63,0.46,"[-0.63, 0.46]",False
 (d) Training data,same ViT-B-16 architecture,DataComp (XL filtered),ImgNet,0.11,-0.09,0.31,"[-0.09, 0.31]",False
-(d) Training data,same ViT-B-16 architecture,DataComp (XL filtered),Marine,2.67,2.25,3.07,"[2.25, 3.07]",True
 (d) Training data,same ViT-B-16 architecture,DataComp (XL filtered),OxPets,2.02,1.23,2.78,"[1.23, 2.78]",True
+(d) Training data,same ViT-B-16 architecture,DataComp (XL filtered),Sea Animals,2.67,2.25,3.07,"[2.25, 3.07]",True
 (d) Training data,same ViT-B-16 architecture,DataComp (XL filtered),UCM,4.71,2.71,6.71,"[2.71, 6.71]",True
 (d) Training data,same ViT-B-16 architecture,MetaCLIP (400M curated),COCO†,0.08,-0.18,0.35,"[-0.18, 0.35]",False
 (d) Training data,same ViT-B-16 architecture,MetaCLIP (400M curated),CUB200,-0.62,-1.42,0.16,"[-1.42, 0.16]",False
@@ -77,8 +77,8 @@ Plot,Comparison,Model,Dataset,Δp (pp),95% CI Lower,95% CI Upper,Confidence Inte
 (d) Training data,same ViT-B-16 architecture,MetaCLIP (400M curated),Fish,1.89,1.17,2.65,"[1.17, 2.65]",True
 (d) Training data,same ViT-B-16 architecture,MetaCLIP (400M curated),Flwrs102,2.59,2.0,3.25,"[2.00, 3.25]",True
 (d) Training data,same ViT-B-16 architecture,MetaCLIP (400M curated),ImgNet,0.45,0.21,0.68,"[0.21, 0.68]",True
-(d) Training data,same ViT-B-16 architecture,MetaCLIP (400M curated),Marine,2.46,2.06,2.85,"[2.06, 2.85]",True
 (d) Training data,same ViT-B-16 architecture,MetaCLIP (400M curated),OxPets,0.87,-0.05,1.83,"[-0.05, 1.83]",False
+(d) Training data,same ViT-B-16 architecture,MetaCLIP (400M curated),Sea Animals,2.46,2.06,2.85,"[2.06, 2.85]",True
 (d) Training data,same ViT-B-16 architecture,MetaCLIP (400M curated),UCM,-2.33,-4.19,-0.38,"[-4.19, -0.38]",True
 (d) Training data,same ViT-B-16 architecture,OpenCLIP (LAION-2B),COCO†,-0.05,-0.3,0.2,"[-0.30, 0.20]",False
 (d) Training data,same ViT-B-16 architecture,OpenCLIP (LAION-2B),CUB200,-0.67,-1.31,-0.02,"[-1.31, -0.02]",True
@@ -86,6 +86,6 @@ Plot,Comparison,Model,Dataset,Δp (pp),95% CI Lower,95% CI Upper,Confidence Inte
 (d) Training data,same ViT-B-16 architecture,OpenCLIP (LAION-2B),Fish,7.24,6.43,8.12,"[6.43, 8.12]",True
 (d) Training data,same ViT-B-16 architecture,OpenCLIP (LAION-2B),Flwrs102,2.7,2.1,3.32,"[2.10, 3.32]",True
 (d) Training data,same ViT-B-16 architecture,OpenCLIP (LAION-2B),ImgNet,0.05,-0.15,0.24,"[-0.15, 0.24]",False
-(d) Training data,same ViT-B-16 architecture,OpenCLIP (LAION-2B),Marine,1.21,0.79,1.63,"[0.79, 1.63]",True
 (d) Training data,same ViT-B-16 architecture,OpenCLIP (LAION-2B),OxPets,0.71,0.0,1.47,"[0.00, 1.47]",False
+(d) Training data,same ViT-B-16 architecture,OpenCLIP (LAION-2B),Sea Animals,1.21,0.79,1.63,"[0.79, 1.63]",True
 (d) Training data,same ViT-B-16 architecture,OpenCLIP (LAION-2B),UCM,-0.62,-2.48,1.33,"[-2.48, 1.33]",False
