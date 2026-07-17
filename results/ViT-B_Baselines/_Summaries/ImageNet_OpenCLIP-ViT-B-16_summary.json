@@ -1,0 +1,37 @@
+{
+  "model": "OpenCLIP-ViT-B-16",
+  "dataset": "ImageNet",
+  "factors": [
+    "background",
+    "quality",
+    "condition"
+  ],
+  "simple_acc": 69.256,
+  "plus_z_acc": 69.30199861526489,
+  "delta_p_stats": {
+    "baseline_acc": 69.256,
+    "baseline_ci": [
+      68.842,
+      69.67605
+    ],
+    "context_acc": 69.30199999999999,
+    "context_ci": [
+      68.92394999999999,
+      69.702
+    ],
+    "delta_p": 0.04599999999999227,
+    "delta_p_ci": [
+      -0.15204999999999663,
+      0.24399999999999977
+    ],
+    "delta_p_se": 0.10374321737624964,
+    "mcnemar_stat": 0.17491868449584388,
+    "mcnemar_p": 0.6757769083296842,
+    "significant": "False",
+    "mcnemar_b": 1372,
+    "mcnemar_c": 1395,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.6887067572246526,
+  "f1_macro_plus_z": 0.6878871685832669
+}

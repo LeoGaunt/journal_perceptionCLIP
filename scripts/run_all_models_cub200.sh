@@ -1,6 +1,4 @@
 #!/bin/bash
-# Run CUB-200 across all model families for the TPAMI cross-architecture study.
-# Usage: bash scripts/run_all_models_cub200.sh
 
 export PYTHONPATH="$PYTHONPATH:$PWD"
 

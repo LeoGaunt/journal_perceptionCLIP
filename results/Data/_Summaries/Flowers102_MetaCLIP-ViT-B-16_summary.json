@@ -1,0 +1,38 @@
+{
+  "model": "MetaCLIP-ViT-B-16",
+  "dataset": "Flowers102",
+  "factors": [
+    "background",
+    "illumination",
+    "petals",
+    "quality"
+  ],
+  "simple_acc": 68.85672467067816,
+  "plus_z_acc": 71.44250869750977,
+  "delta_p_stats": {
+    "baseline_acc": 68.85672467067816,
+    "baseline_ci": [
+      67.71832818344447,
+      69.97885835095138
+    ],
+    "context_acc": 71.4425109773947,
+    "context_ci": [
+      70.32037729712148,
+      72.5813140348024
+    ],
+    "delta_p": 2.5857863067165425,
+    "delta_p_ci": [
+      2.000325256139212,
+      3.252561392096276
+    ],
+    "delta_p_se": 0.32466994236262947,
+    "mcnemar_stat": 59.016548463356976,
+    "mcnemar_p": 1.5654144647214707e-14,
+    "significant": "True",
+    "mcnemar_b": 132,
+    "mcnemar_c": 291,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.5933120247572825,
+  "f1_macro_plus_z": 0.6156677443301166
+}

@@ -1,0 +1,39 @@
+{
+  "model": "DataComp-ViT-B-16",
+  "dataset": "Fish",
+  "factors": [
+    "in",
+    "size",
+    "amount",
+    "location",
+    "liveness"
+  ],
+  "simple_acc": 40.7993884459976,
+  "plus_z_acc": 44.0209686756134,
+  "delta_p_stats": {
+    "baseline_acc": 40.7993884459976,
+    "baseline_ci": [
+      39.76193076335044,
+      41.76040187834444
+    ],
+    "context_acc": 44.02096756579666,
+    "context_ci": [
+      43.0269192967129,
+      45.04750464125805
+    ],
+    "delta_p": 3.2215791197990598,
+    "delta_p_ci": [
+      2.4677842088020125,
+      3.9641804084307064
+    ],
+    "delta_p_se": 0.3792498722857649,
+    "mcnemar_stat": 72.33138075313808,
+    "mcnemar_p": 0.0,
+    "significant": "True",
+    "mcnemar_b": 450,
+    "mcnemar_c": 745,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.40046403087550764,
+  "f1_macro_plus_z": 0.43183002601864157
+}

@@ -1,0 +1,37 @@
+{
+  "model": "OpenCLIP-ViT-B-16",
+  "dataset": "UCM",
+  "factors": [
+    "condition",
+    "source",
+    "land"
+  ],
+  "simple_acc": 70.19047619047619,
+  "plus_z_acc": 69.57142949104309,
+  "delta_p_stats": {
+    "baseline_acc": 70.19047619047619,
+    "baseline_ci": [
+      68.23809523809524,
+      72.14285714285714
+    ],
+    "context_acc": 69.57142857142857,
+    "context_ci": [
+      67.61904761904762,
+      71.61904761904762
+    ],
+    "delta_p": -0.6190476190476204,
+    "delta_p_ci": [
+      -2.4761904761904763,
+      1.333333333333342
+    ],
+    "delta_p_se": 0.9515520774311406,
+    "mcnemar_stat": 0.3469879518072289,
+    "mcnemar_p": 0.5558231498321651,
+    "significant": "False",
+    "mcnemar_b": 214,
+    "mcnemar_c": 201,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.6854141258536358,
+  "f1_macro_plus_z": 0.6896234053388988
+}

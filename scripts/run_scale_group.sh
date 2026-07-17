@@ -1,11 +1,5 @@
 #!/bin/bash
-# ============================================================
-# Scale group — all LAION-2B, softmax, transformer.
-# Only parameter count / patch size changes across models.
-# ViT-B-16 (86M) | ViT-L-14 (307M) | ViT-H-14 (632M)
-#
-# Usage: bash scripts/run_scale_group.sh
-# ============================================================
+
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 MODELS=(

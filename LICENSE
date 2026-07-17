@@ -1,6 +1,8 @@
 MIT License
 
-Copyright (c) 2023 CMU Locus Lab
+Copyright (c) 2026 Leo Gaunt
+Copyright (c) 2023 CMU Locus Lab (inherited from the upstream PerceptionCLIP
+repository, https://github.com/umd-huang-lab/perceptionCLIP)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +21,20 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+--------------------------------------------------------------------------
+Third-party components
+--------------------------------------------------------------------------
+
+This repository is a fork of PerceptionCLIP
+(https://github.com/umd-huang-lab/perceptionCLIP), distributed under the
+MIT License with the copyright notice retained above.
+
+The clip/ directory contains a lightly modified copy of OpenAI CLIP
+(https://github.com/openai/CLIP), distributed under the MIT License,
+Copyright (c) 2021 OpenAI. See clip/LICENSE.
+
+Pretrained model weights loaded at runtime (OpenCLIP, SigLIP, MetaCLIP,
+DataComp, and OpenAI CLIP checkpoints) and all datasets are subject to
+their own respective licences and terms of use; they are not covered by
+this licence and are not redistributed in this repository.

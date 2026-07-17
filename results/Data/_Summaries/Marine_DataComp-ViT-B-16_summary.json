@@ -1,0 +1,39 @@
+{
+  "model": "DataComp-ViT-B-16",
+  "dataset": "Marine",
+  "factors": [
+    "in",
+    "size",
+    "amount",
+    "location",
+    "state"
+  ],
+  "simple_acc": 73.36445189993435,
+  "plus_z_acc": 76.03384256362915,
+  "delta_p_stats": {
+    "baseline_acc": 73.36445189993435,
+    "baseline_ci": [
+      72.64969732331704,
+      74.0937933046459
+    ],
+    "context_acc": 76.03384144117862,
+    "context_ci": [
+      75.311611115163,
+      76.74130260374882
+    ],
+    "delta_p": 2.6693895412442714,
+    "delta_p_ci": [
+      2.253482605207497,
+      3.0705273138356026
+    ],
+    "delta_p_se": 0.21311030621326735,
+    "mcnemar_stat": 153.83949191685912,
+    "mcnemar_p": 0.0,
+    "significant": "True",
+    "mcnemar_b": 250,
+    "mcnemar_c": 616,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.6836465459826931,
+  "f1_macro_plus_z": 0.7219478702483567
+}

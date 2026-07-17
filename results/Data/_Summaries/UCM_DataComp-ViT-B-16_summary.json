@@ -1,0 +1,37 @@
+{
+  "model": "DataComp-ViT-B-16",
+  "dataset": "UCM",
+  "factors": [
+    "condition",
+    "source",
+    "land"
+  ],
+  "simple_acc": 67.61904761904762,
+  "plus_z_acc": 72.33333587646484,
+  "delta_p_stats": {
+    "baseline_acc": 67.61904761904762,
+    "baseline_ci": [
+      65.66547619047618,
+      69.66666666666667
+    ],
+    "context_acc": 72.33333333333334,
+    "context_ci": [
+      70.42738095238096,
+      74.23809523809524
+    ],
+    "delta_p": 4.714285714285722,
+    "delta_p_ci": [
+      2.714285714285724,
+      6.714285714285717
+    ],
+    "delta_p_se": 1.0359722865371013,
+    "mcnemar_stat": 19.169660678642714,
+    "mcnemar_p": 1.1959924729909588e-05,
+    "significant": "True",
+    "mcnemar_b": 201,
+    "mcnemar_c": 300,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.6670759885413053,
+  "f1_macro_plus_z": 0.7141785409774863
+}

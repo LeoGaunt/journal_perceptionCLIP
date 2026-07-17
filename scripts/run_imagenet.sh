@@ -1,40 +1,4 @@
 #!/bin/bash
-# ============================================================
-# run_imagenet.sh  —  ImageNet experiments across all four
-# comparison groups (Scale, Architecture, Data, Objective).
-#
-# Mirrors the structure of the per-dataset group scripts but
-# runs ImageNet only, saving into the same results/ tree so
-# results are directly comparable to other datasets.
-#
-# Usage
-# -----
-#   bash scripts/run_imagenet.sh              # all four groups
-#   bash scripts/run_imagenet.sh --scale      # scale only
-#   bash scripts/run_imagenet.sh --arch       # architecture only
-#   bash scripts/run_imagenet.sh --data       # data only
-#   bash scripts/run_imagenet.sh --objective  # objective only
-#
-# Prerequisites
-# -------------
-#   1. ImageNet val is set up:
-#        datasets/data/imagenet/val/<synset_dirs>
-#      Run `bash importers/imagenet.sh <user> <key>` if not done.
-#
-#   2. src/datasets/imagenet.py and src/templates/imagenet_template.py
-#      are present (shipped alongside this script).
-#
-# Output
-# ------
-#   results/
-#   ├── scale/ImageNet/
-#   ├── architecture/ImageNet/
-#   ├── data/ImageNet/
-#   └── objective/ImageNet/
-#
-# Estimated runtime on A100  (50k val images, 1000 classes):
-#   Each model × 3 conditions ≈ 8–15 min  →  total ≈ 3–5 hours
-# ============================================================
 
 set -e
 export PYTHONPATH="$PYTHONPATH:$PWD"

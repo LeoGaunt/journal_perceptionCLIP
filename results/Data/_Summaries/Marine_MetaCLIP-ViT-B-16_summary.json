@@ -1,0 +1,39 @@
+{
+  "model": "MetaCLIP-ViT-B-16",
+  "dataset": "Marine",
+  "factors": [
+    "in",
+    "size",
+    "amount",
+    "location",
+    "state"
+  ],
+  "simple_acc": 70.7461162570199,
+  "plus_z_acc": 73.20399880409241,
+  "delta_p_stats": {
+    "baseline_acc": 70.7461162570199,
+    "baseline_ci": [
+      69.99489461016702,
+      71.49004448982569
+    ],
+    "context_acc": 73.20399679089782,
+    "context_ci": [
+      72.44548172999781,
+      73.94081394500766
+    ],
+    "delta_p": 2.457880533877912,
+    "delta_p_ci": [
+      2.0638538399824946,
+      2.851724892422147
+    ],
+    "delta_p_se": 0.19831974483161222,
+    "mcnemar_stat": 148.74308300395256,
+    "mcnemar_p": 0.0,
+    "significant": "True",
+    "mcnemar_b": 211,
+    "mcnemar_c": 548,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.6568602542234939,
+  "f1_macro_plus_z": 0.6858713441723754
+}

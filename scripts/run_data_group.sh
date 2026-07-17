@@ -1,13 +1,5 @@
 #!/bin/bash
-# ============================================================
-# Data group — all ViT-B-16 architecture, softmax objective.
-# Only training data / curation method changes.
-#   OpenCLIP-ViT-B-16   LAION-2B        (large-scale web data)
-#   MetaCLIP-ViT-B-16   MetaCLIP-400M   (curation matching WIT)
-#   DataComp-ViT-B-16   DataComp-XL     (quality-filtered curation)
-#
-# Usage: bash scripts/run_data_group.sh
-# ============================================================
+
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 MODELS=(

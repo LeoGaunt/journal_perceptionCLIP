@@ -1,0 +1,36 @@
+{
+  "model": "DataComp-ViT-B-16",
+  "dataset": "EuroSAT",
+  "factors": [
+    "condition",
+    "source"
+  ],
+  "simple_acc": 47.02962962962963,
+  "plus_z_acc": 53.68888974189758,
+  "delta_p_stats": {
+    "baseline_acc": 47.02962962962963,
+    "baseline_ci": [
+      46.44814814814815,
+      47.60759259259259
+    ],
+    "context_acc": 53.68888888888888,
+    "context_ci": [
+      53.08509259259259,
+      54.29259259259259
+    ],
+    "delta_p": 6.659259259259251,
+    "delta_p_ci": [
+      6.033240740740743,
+      7.28888888888889
+    ],
+    "delta_p_se": 0.3210657263500255,
+    "mcnemar_stat": 439.2286452665941,
+    "mcnemar_p": 0.0,
+    "significant": "True",
+    "mcnemar_b": 2777,
+    "mcnemar_c": 4575,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.4115266456656201,
+  "f1_macro_plus_z": 0.5395459681647159
+}

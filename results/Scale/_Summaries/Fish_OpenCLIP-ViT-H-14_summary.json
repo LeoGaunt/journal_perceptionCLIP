@@ -1,0 +1,39 @@
+{
+  "model": "OpenCLIP-ViT-H-14",
+  "dataset": "Fish",
+  "factors": [
+    "in",
+    "size",
+    "amount",
+    "location",
+    "liveness"
+  ],
+  "simple_acc": 39.39063011903462,
+  "plus_z_acc": 49.08812940120697,
+  "delta_p_stats": {
+    "baseline_acc": 39.39063011903462,
+    "baseline_ci": [
+      38.363820028393576,
+      40.37348476575298
+    ],
+    "context_acc": 49.08812929998908,
+    "context_ci": [
+      48.06131920934804,
+      50.11493939063012
+    ],
+    "delta_p": 9.697499180954459,
+    "delta_p_ci": [
+      8.802009391722182,
+      10.604182592552142
+    ],
+    "delta_p_se": 0.4575333981196774,
+    "mcnemar_stat": 411.92094240837696,
+    "mcnemar_p": 0.0,
+    "significant": "True",
+    "mcnemar_b": 511,
+    "mcnemar_c": 1399,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.38576539709489055,
+  "f1_macro_plus_z": 0.44927202058210347
+}

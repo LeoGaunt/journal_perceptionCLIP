@@ -1,0 +1,37 @@
+{
+  "model": "DataComp-ViT-B-16",
+  "dataset": "CUB200",
+  "factors": [
+    "size",
+    "background",
+    "condition"
+  ],
+  "simple_acc": 78.46047635484985,
+  "plus_z_acc": 78.11529040336609,
+  "delta_p_stats": {
+    "baseline_acc": 78.46047635484985,
+    "baseline_ci": [
+      77.3558853986883,
+      79.44425267518123
+    ],
+    "context_acc": 78.11529168104936,
+    "context_ci": [
+      77.0797376596479,
+      79.20262340352089
+    ],
+    "delta_p": -0.3451846738004889,
+    "delta_p_ci": [
+      -0.8802209181912324,
+      0.18985157059026037
+    ],
+    "delta_p_se": 0.27627069004984434,
+    "mcnemar_stat": 1.3884615384615384,
+    "mcnemar_p": 0.23866508081821713,
+    "significant": "False",
+    "mcnemar_b": 140,
+    "mcnemar_c": 120,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.7700207369525717,
+  "f1_macro_plus_z": 0.7692282208705457
+}

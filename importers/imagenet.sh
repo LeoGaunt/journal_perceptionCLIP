@@ -8,18 +8,6 @@
 #   bash importers/imagenet.sh <username> <access_key>           # val only
 #   bash importers/imagenet.sh <username> <access_key> --train   # val + train
 #
-# Or via environment variables (safer in shared/logged environments):
-#   export IMAGENET_USER=your_username
-#   export IMAGENET_KEY=your_access_key
-#   bash importers/imagenet.sh
-#
-# Output layout (matches src/datasets/imagenet.py):
-#   datasets/data/imagenet/
-#   └── val/
-#       ├── n01440764/   (tench, 50 images)
-#       ├── n01443537/   (goldfish, 50 images)
-#       └── ...          (1000 synset dirs, 50k images total)
-#
 # MD5 checksums (image-net.org official):
 #   val:   29b22e2961454d5413ddabcf34fc5622
 #   train: 1d675b47d978889d74fa0da5fadfb00e

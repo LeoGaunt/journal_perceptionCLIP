@@ -1,5 +1,5 @@
 """
-run_experiment.py — Unified experiment runner for the TPAMI paper.
+run_experiment.py — Unified experiment runner
 
 Runs Simple → Domain → +Z for a given dataset/model combination in one
 call, writes JSON per condition, then computes Δp with bootstrap CIs
@@ -8,22 +8,16 @@ and McNemar's test between Simple and +Z.
 Usage
 -----
     python run_experiment.py \\
-        --dataset EuroSAT \\
-        --data_location ./datasets/data \\
-        --model ViT-B/16 \\
-        --factors condition,source \\
-        --simple_template eurosat_template \\
-        --domain_template eurosat_template \\
-        --main_template eurosat_main_template \\
-        --factor_templates eurosat_factor_templates \\
-        --save_path ./results/eurosat \\
-        --save_name eurosat_ViT-B16
-
-Supported --model values (see src/models/modeling.py for the full list)
-    Original CLIP   : ViT-B/16  ViT-L/14@336px  RN50x4
-    OpenCLIP LAION  : OpenCLIP-ViT-H-14  OpenCLIP-ViT-L-14  OpenCLIP-ViT-B-16
-    MetaCLIP        : MetaCLIP-ViT-B-16  MetaCLIP-ViT-L-14  MetaCLIP-ViT-H-14
-    SigLIP          : SigLIP-ViT-B-16    SigLIP-ViT-L-16-384
+        --dataset {dataset} \\
+        --data_location {location}\\
+        --model {model} \\
+        --factors {factors} \\
+        --simple_template {simple} \\
+        --domain_template {domain} \\
+        --main_template {main} \\
+        --factor_templates {factor_templates} \\
+        --save_path ./results/{dataset} \\
+        --save_name {dataset}_{model}
 """
 
 import argparse
@@ -65,7 +59,6 @@ from src.evaluation.statistical import delta_p_with_stats, summarise_results
 from src.evaluation.metrics import confusion_matrix_report
 
 
-# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
@@ -93,7 +86,6 @@ def parse_args():
     return args
 
 
-# ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 
@@ -182,7 +174,6 @@ def _save_condition(results, save_path, save_name, condition):
     return path
 
 
-# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 

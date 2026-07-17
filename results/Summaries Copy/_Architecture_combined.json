@@ -1,0 +1,342 @@
+[
+  {
+    "model": "ConvNeXt-B",
+    "dataset": "CUB200",
+    "factors": [
+      "size",
+      "background",
+      "condition"
+    ],
+    "simple_acc": 71.95374525371074,
+    "plus_z_acc": 71.29789590835571,
+    "delta_p_stats": {
+      "baseline_acc": 71.95374525371074,
+      "baseline_ci": [
+        70.77968588194685,
+        73.12737314463237
+      ],
+      "context_acc": 71.29789437348981,
+      "context_ci": [
+        70.15878494994823,
+        72.45426303072144
+      ],
+      "delta_p": -0.6558508802209246,
+      "delta_p_ci": [
+        -1.2599240593717642,
+        -0.034518467380040274
+      ],
+      "delta_p_se": 0.3128213443944868,
+      "mcnemar_stat": 4.098802395209581,
+      "mcnemar_p": 0.04291360066061056,
+      "significant": "True",
+      "mcnemar_b": 186,
+      "mcnemar_c": 148,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.7074904479709031,
+    "f1_macro_plus_z": 0.7000634114620891
+  },
+  {
+    "model": "ConvNeXt-B",
+    "dataset": "Dissertation",
+    "factors": [
+      "on",
+      "direction",
+      "amount",
+      "weather",
+      "decker"
+    ],
+    "simple_acc": 99.52153110047847,
+    "plus_z_acc": 99.44598078727722,
+    "delta_p_stats": {
+      "baseline_acc": 99.52153110047847,
+      "baseline_ci": [
+        99.29425837320574,
+        99.7229916897507
+      ],
+      "context_acc": 99.44598337950139,
+      "context_ci": [
+        99.21934021657013,
+        99.67262654243264
+      ],
+      "delta_p": -0.07554772097708451,
+      "delta_p_ci": [
+        -0.27700831024930483,
+        0.10135985897759175
+      ],
+      "delta_p_se": 0.10022651402176905,
+      "mcnemar_stat": 0.26666666666666666,
+      "mcnemar_p": 0.6055766163353462,
+      "significant": "False",
+      "mcnemar_b": 9,
+      "mcnemar_c": 6,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.9950636677532847,
+    "f1_macro_plus_z": 0.9942763435477996
+  },
+  {
+    "model": "ConvNeXt-B",
+    "dataset": "EuroSAT",
+    "factors": [
+      "condition",
+      "source"
+    ],
+    "simple_acc": 48.75555555555556,
+    "plus_z_acc": 54.285186529159546,
+    "delta_p_stats": {
+      "baseline_acc": 48.75555555555556,
+      "baseline_ci": [
+        48.14805555555555,
+        49.32222222222222
+      ],
+      "context_acc": 54.28518518518518,
+      "context_ci": [
+        53.699814814814815,
+        54.89268518518519
+      ],
+      "delta_p": 5.529629629629618,
+      "delta_p_ci": [
+        4.959259259259263,
+        6.088981481481485
+      ],
+      "delta_p_se": 0.2918028058604422,
+      "mcnemar_stat": 352.2810571292926,
+      "mcnemar_p": 0.0,
+      "significant": "True",
+      "mcnemar_b": 2413,
+      "mcnemar_c": 3906,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.4365234012017831,
+    "f1_macro_plus_z": 0.5210807597555831
+  },
+  {
+    "model": "ConvNeXt-B",
+    "dataset": "Fish",
+    "factors": [
+      "in",
+      "size",
+      "amount",
+      "location",
+      "liveness"
+    ],
+    "simple_acc": 28.415419897346293,
+    "plus_z_acc": 31.331223249435425,
+    "delta_p_stats": {
+      "baseline_acc": 28.415419897346293,
+      "baseline_ci": [
+        27.421371628262534,
+        29.321830293764332
+      ],
+      "context_acc": 31.33122201594409,
+      "context_ci": [
+        30.381129190783007,
+        32.357759091405484
+      ],
+      "delta_p": 2.915802118597796,
+      "delta_p_ci": [
+        2.162007207600739,
+        3.6914382439663616
+      ],
+      "delta_p_se": 0.3960722535823889,
+      "mcnemar_stat": 54.30237912509593,
+      "mcnemar_p": 1.7186252421197423E-13,
+      "significant": "True",
+      "mcnemar_b": 518,
+      "mcnemar_c": 785,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.25655760820365653,
+    "f1_macro_plus_z": 0.29586695126777424
+  },
+  {
+    "model": "ConvNeXt-B",
+    "dataset": "Flowers102",
+    "factors": [
+      "background",
+      "illumination",
+      "petals",
+      "quality"
+    ],
+    "simple_acc": 69.53976256301839,
+    "plus_z_acc": 69.97885704040527,
+    "delta_p_stats": {
+      "baseline_acc": 69.53976256301839,
+      "baseline_ci": [
+        68.3851032688242,
+        70.61310782241014
+      ],
+      "context_acc": 69.97885835095138,
+      "context_ci": [
+        68.75914782891527,
+        71.21483167994795
+      ],
+      "delta_p": 0.43909578793299886,
+      "delta_p_ci": [
+        -0.17889087656529634,
+        1.0245568385103265
+      ],
+      "delta_p_se": 0.3180738400415882,
+      "mcnemar_stat": 1.8026666666666666,
+      "mcnemar_p": 0.17939044192314102,
+      "significant": "False",
+      "mcnemar_b": 174,
+      "mcnemar_c": 201,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.6289007074883951,
+    "f1_macro_plus_z": 0.6420422288619042
+  },
+  {
+    "model": "ConvNeXt-B",
+    "dataset": "ImageNet",
+    "factors": [
+      "background",
+      "quality",
+      "condition"
+    ],
+    "simple_acc": 70.284,
+    "plus_z_acc": 70.09199857711792,
+    "delta_p_stats": {
+      "baseline_acc": 70.284,
+      "baseline_ci": [
+        69.87,
+        70.7
+      ],
+      "context_acc": 70.092,
+      "context_ci": [
+        69.69595,
+        70.47605
+      ],
+      "delta_p": -0.19200000000000728,
+      "delta_p_ci": [
+        -0.40599999999999553,
+        0.028050000000005296
+      ],
+      "delta_p_se": 0.10835311364985699,
+      "mcnemar_stat": 3.1711173576950107,
+      "mcnemar_p": 0.07495115354053283,
+      "significant": "False",
+      "mcnemar_b": 1471,
+      "mcnemar_c": 1375,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.6992662636507391,
+    "f1_macro_plus_z": 0.6967818339869928
+  },
+  {
+    "model": "ConvNeXt-B",
+    "dataset": "Marine",
+    "factors": [
+      "in",
+      "size",
+      "amount",
+      "location",
+      "state"
+    ],
+    "simple_acc": 69.88549339946029,
+    "plus_z_acc": 70.93574404716492,
+    "delta_p_stats": {
+      "baseline_acc": 69.88549339946029,
+      "baseline_ci": [
+        69.14867624535044,
+        70.63671504631318
+      ],
+      "context_acc": 70.93574502224492,
+      "context_ci": [
+        70.16264313325068,
+        71.70884691123915
+      ],
+      "delta_p": 1.0502516227846286,
+      "delta_p_ci": [
+        0.6124644446065153,
+        1.4659762234702112
+      ],
+      "delta_p_se": 0.22274589326697442,
+      "mcnemar_stat": 22.035560344827587,
+      "mcnemar_p": 0.0000026764556655400895,
+      "significant": "True",
+      "mcnemar_b": 392,
+      "mcnemar_c": 536,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.6521593920206926,
+    "f1_macro_plus_z": 0.6634824837200274
+  },
+  {
+    "model": "ConvNeXt-B",
+    "dataset": "OxfordPets",
+    "factors": [
+      "species",
+      "background",
+      "pose",
+      "interaction"
+    ],
+    "simple_acc": 90.13355137639684,
+    "plus_z_acc": 92.06868410110474,
+    "delta_p_stats": {
+      "baseline_acc": 90.13355137639684,
+      "baseline_ci": [
+        89.20686835650041,
+        91.06023439629327
+      ],
+      "context_acc": 92.06868356500408,
+      "context_ci": [
+        91.19651131098392,
+        92.91360043608613
+      ],
+      "delta_p": 1.9351321886072412,
+      "delta_p_ci": [
+        1.22649223221587,
+        2.643772144998635
+      ],
+      "delta_p_se": 0.36104827654963423,
+      "mcnemar_stat": 27.683615819209038,
+      "mcnemar_p": 1.4286763805326785E-7,
+      "significant": "True",
+      "mcnemar_b": 53,
+      "mcnemar_c": 124,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.8890459294322799,
+    "f1_macro_plus_z": 0.9198036501117962
+  },
+  {
+    "model": "ConvNeXt-B",
+    "dataset": "UCM",
+    "factors": [
+      "condition",
+      "source",
+      "land"
+    ],
+    "simple_acc": 71.04761904761905,
+    "plus_z_acc": 72.2857117652893,
+    "delta_p_stats": {
+      "baseline_acc": 71.04761904761905,
+      "baseline_ci": [
+        69.0,
+        73.09523809523809
+      ],
+      "context_acc": 72.28571428571429,
+      "context_ci": [
+        70.28571428571428,
+        74.14285714285714
+      ],
+      "delta_p": 1.2380952380952408,
+      "delta_p_ci": [
+        -0.33333333333332993,
+        2.809523809523806
+      ],
+      "delta_p_se": 0.8094845729186936,
+      "mcnemar_stat": 2.0833333333333335,
+      "mcnemar_p": 0.14891467317876161,
+      "significant": "False",
+      "mcnemar_b": 137,
+      "mcnemar_c": 163,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.6844479956648207,
+    "f1_macro_plus_z": 0.699526645550061
+  }
+]

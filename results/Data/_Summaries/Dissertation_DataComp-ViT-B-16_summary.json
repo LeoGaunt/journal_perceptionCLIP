@@ -1,0 +1,39 @@
+{
+  "model": "DataComp-ViT-B-16",
+  "dataset": "Dissertation",
+  "factors": [
+    "on",
+    "direction",
+    "amount",
+    "weather",
+    "decker"
+  ],
+  "simple_acc": 99.3704356585243,
+  "plus_z_acc": 98.76605272293091,
+  "delta_p_stats": {
+    "baseline_acc": 99.3704356585243,
+    "baseline_ci": [
+      99.11860992193402,
+      99.62226139511458
+    ],
+    "context_acc": 98.76605389070762,
+    "context_ci": [
+      98.41349785948124,
+      99.093427348275
+    ],
+    "delta_p": -0.6043817678166761,
+    "delta_p_ci": [
+      -0.9569377990430672,
+      -0.2518257365902832
+    ],
+    "delta_p_se": 0.18050347851231396,
+    "mcnemar_stat": 10.58,
+    "mcnemar_p": 0.0011431765973566321,
+    "significant": "True",
+    "mcnemar_b": 37,
+    "mcnemar_c": 13,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.9935060071478077,
+  "f1_macro_plus_z": 0.9872190960219445
+}

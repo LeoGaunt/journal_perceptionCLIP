@@ -1,0 +1,37 @@
+{
+  "model": "OpenCLIP-ViT-L-14",
+  "dataset": "CUB200",
+  "factors": [
+    "size",
+    "background",
+    "condition"
+  ],
+  "simple_acc": 75.52640662754574,
+  "plus_z_acc": 75.28477907180786,
+  "delta_p_stats": {
+    "baseline_acc": 75.52640662754574,
+    "baseline_ci": [
+      74.4218156713842,
+      76.59691059716948
+    ],
+    "context_acc": 75.2847773558854,
+    "context_ci": [
+      74.16292716603382,
+      76.35528132550914
+    ],
+    "delta_p": -0.24162927166034365,
+    "delta_p_ci": [
+      -0.8629616845012067,
+      0.4142216085605832
+    ],
+    "delta_p_se": 0.3288525400020101,
+    "mcnemar_stat": 0.46685082872928174,
+    "mcnemar_p": 0.49443951318217394,
+    "significant": "False",
+    "mcnemar_b": 188,
+    "mcnemar_c": 174,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.7432686196939906,
+  "f1_macro_plus_z": 0.7396285551417775
+}

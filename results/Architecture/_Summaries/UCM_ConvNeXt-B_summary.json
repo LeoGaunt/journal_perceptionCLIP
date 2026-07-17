@@ -1,0 +1,37 @@
+{
+  "model": "ConvNeXt-B",
+  "dataset": "UCM",
+  "factors": [
+    "condition",
+    "source",
+    "land"
+  ],
+  "simple_acc": 71.04761904761905,
+  "plus_z_acc": 72.2857117652893,
+  "delta_p_stats": {
+    "baseline_acc": 71.04761904761905,
+    "baseline_ci": [
+      69.0,
+      73.09523809523809
+    ],
+    "context_acc": 72.28571428571429,
+    "context_ci": [
+      70.28571428571428,
+      74.14285714285714
+    ],
+    "delta_p": 1.2380952380952408,
+    "delta_p_ci": [
+      -0.33333333333332993,
+      2.809523809523806
+    ],
+    "delta_p_se": 0.8094845729186936,
+    "mcnemar_stat": 2.0833333333333335,
+    "mcnemar_p": 0.14891467317876161,
+    "significant": "False",
+    "mcnemar_b": 137,
+    "mcnemar_c": 163,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.6844479956648207,
+  "f1_macro_plus_z": 0.699526645550061
+}

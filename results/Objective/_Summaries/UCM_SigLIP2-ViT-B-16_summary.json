@@ -1,0 +1,37 @@
+{
+  "model": "SigLIP2-ViT-B-16",
+  "dataset": "UCM",
+  "factors": [
+    "condition",
+    "source",
+    "land"
+  ],
+  "simple_acc": 72.61904761904762,
+  "plus_z_acc": 73.4761893749237,
+  "delta_p_stats": {
+    "baseline_acc": 72.61904761904762,
+    "baseline_ci": [
+      70.76190476190476,
+      74.61904761904762
+    ],
+    "context_acc": 73.47619047619047,
+    "context_ci": [
+      71.52380952380952,
+      75.3345238095238
+    ],
+    "delta_p": 0.857142857142847,
+    "delta_p_ci": [
+      -0.8095238095238155,
+      2.6666666666666727
+    ],
+    "delta_p_se": 0.9102954226623262,
+    "mcnemar_stat": 0.7487046632124352,
+    "mcnemar_p": 0.3868866521841139,
+    "significant": "False",
+    "mcnemar_b": 184,
+    "mcnemar_c": 202,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.7012495133907652,
+  "f1_macro_plus_z": 0.7116396643695047
+}

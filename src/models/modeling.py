@@ -1,7 +1,7 @@
 """
 modeling.py — Unified VLM encoder supporting multiple backends.
 
-Model groups for the TPAMI paper
+Model groups
 ----------------------------------
 
 Scale group (all LAION-2B, softmax, transformer — only size changes):

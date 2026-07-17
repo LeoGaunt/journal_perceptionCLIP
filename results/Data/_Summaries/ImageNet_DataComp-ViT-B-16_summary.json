@@ -1,0 +1,37 @@
+{
+  "model": "DataComp-ViT-B-16",
+  "dataset": "ImageNet",
+  "factors": [
+    "background",
+    "quality",
+    "condition"
+  ],
+  "simple_acc": 72.978,
+  "plus_z_acc": 73.08800220489502,
+  "delta_p_stats": {
+    "baseline_acc": 72.978,
+    "baseline_ci": [
+      72.57995,
+      73.36205000000001
+    ],
+    "context_acc": 73.088,
+    "context_ci": [
+      72.71,
+      73.47399999999999
+    ],
+    "delta_p": 0.10999999999999943,
+    "delta_p_ci": [
+      -0.09405000000000496,
+      0.30805000000000776
+    ],
+    "delta_p_se": 0.10335913941132595,
+    "mcnemar_stat": 1.0812013348164626,
+    "mcnemar_p": 0.29842896459941093,
+    "significant": "False",
+    "mcnemar_b": 1321,
+    "mcnemar_c": 1376,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.7266705942605757,
+  "f1_macro_plus_z": 0.7260924665376614
+}

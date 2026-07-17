@@ -1,11 +1,5 @@
 #!/bin/bash
-# ============================================================
-# Architecture group — all LAION-2B, softmax, ~88M params.
-# Only image encoder architecture changes.
-# OpenCLIP-ViT-B-16 (transformer) | ConvNeXt-B (modern CNN)
-#
-# Usage: bash scripts/run_architecture_group.sh
-# ============================================================
+
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 MODELS=(

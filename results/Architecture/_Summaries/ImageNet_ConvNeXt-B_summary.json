@@ -1,0 +1,37 @@
+{
+  "model": "ConvNeXt-B",
+  "dataset": "ImageNet",
+  "factors": [
+    "background",
+    "quality",
+    "condition"
+  ],
+  "simple_acc": 70.284,
+  "plus_z_acc": 70.09199857711792,
+  "delta_p_stats": {
+    "baseline_acc": 70.284,
+    "baseline_ci": [
+      69.87,
+      70.7
+    ],
+    "context_acc": 70.092,
+    "context_ci": [
+      69.69595,
+      70.47605
+    ],
+    "delta_p": -0.19200000000000728,
+    "delta_p_ci": [
+      -0.40599999999999553,
+      0.028050000000005296
+    ],
+    "delta_p_se": 0.10835311364985699,
+    "mcnemar_stat": 3.1711173576950107,
+    "mcnemar_p": 0.07495115354053283,
+    "significant": "False",
+    "mcnemar_b": 1471,
+    "mcnemar_c": 1375,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.6992662636507391,
+  "f1_macro_plus_z": 0.6967818339869928
+}

@@ -1,0 +1,36 @@
+{
+  "model": "OpenCLIP-ViT-H-14",
+  "dataset": "EuroSAT",
+  "factors": [
+    "condition",
+    "source"
+  ],
+  "simple_acc": 62.99629629629629,
+  "plus_z_acc": 73.14444184303284,
+  "delta_p_stats": {
+    "baseline_acc": 62.99629629629629,
+    "baseline_ci": [
+      62.42935185185186,
+      63.56666666666667
+    ],
+    "context_acc": 73.14444444444445,
+    "context_ci": [
+      72.61842592592592,
+      73.68157407407408
+    ],
+    "delta_p": 10.148148148148152,
+    "delta_p_ci": [
+      9.496296296296292,
+      10.751851851851846
+    ],
+    "delta_p_se": 0.32205760192056815,
+    "mcnemar_stat": 930.3225446428571,
+    "mcnemar_p": 0.0,
+    "significant": "True",
+    "mcnemar_b": 2662,
+    "mcnemar_c": 5402,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.6043067511069383,
+  "f1_macro_plus_z": 0.7177966372202182
+}

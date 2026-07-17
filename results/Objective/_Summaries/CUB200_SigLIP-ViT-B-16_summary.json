@@ -1,0 +1,37 @@
+{
+  "model": "SigLIP-ViT-B-16",
+  "dataset": "CUB200",
+  "factors": [
+    "size",
+    "background",
+    "condition"
+  ],
+  "simple_acc": 62.2885743872972,
+  "plus_z_acc": 61.51190996170044,
+  "delta_p_stats": {
+    "baseline_acc": 62.2885743872972,
+    "baseline_ci": [
+      61.04590956161546,
+      63.51397997928891
+    ],
+    "context_acc": 61.51190887124611,
+    "context_ci": [
+      60.217466344494305,
+      62.73731446323784
+    ],
+    "delta_p": -0.7766655160510894,
+    "delta_p_ci": [
+      -1.6051087331722447,
+      0.06903693476010275
+    ],
+    "delta_p_se": 0.42684756269758,
+    "mcnemar_stat": 3.127625201938611,
+    "mcnemar_p": 0.07697579611423255,
+    "significant": "False",
+    "mcnemar_b": 332,
+    "mcnemar_c": 287,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.6011477773733894,
+  "f1_macro_plus_z": 0.5831465761165783
+}

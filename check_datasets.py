@@ -2,16 +2,12 @@
 check_datasets.py — Verify every dataset loads correctly before running experiments.
 
 Instantiates each dataset class, pulls one batch from the test loader, and
-reports success or failure with a clear summary. No model weights are downloaded
-— only the data loading pipeline is tested.
+reports success or failure
 
 Usage
 -----
     python check_datasets.py                         # use default ./datasets/data
     python check_datasets.py --root ./datasets/data  # explicit path
-
-Run this before starting any experiment group to catch path or file
-permission issues early.
 """
 
 import argparse
@@ -24,17 +20,13 @@ import torchvision.transforms as T
 from torch.utils.data import DataLoader
 
 
-# ---------------------------------------------------------------------------
 # Minimal transform — no model needed, just checks data can be loaded
-# ---------------------------------------------------------------------------
 _PREPROCESS = T.Compose([
     T.Resize((224, 224)),
     T.ToTensor(),
 ])
 
-# ---------------------------------------------------------------------------
 # Dataset configs: name → (class_name, location, extra_kwargs)
-# ---------------------------------------------------------------------------
 def _dataset_configs(root: str):
     return [
         {
@@ -94,9 +86,8 @@ def _dataset_configs(root: str):
     ]
 
 
-# ---------------------------------------------------------------------------
-# Colour helpers
-# ---------------------------------------------------------------------------
+# Colours
+
 GREEN  = "\033[92m"
 RED    = "\033[91m"
 YELLOW = "\033[93m"
@@ -108,9 +99,7 @@ def fail(msg):return f"{RED}  FAIL{RESET}  {msg}"
 def warn(msg):return f"{YELLOW}  WARN{RESET}  {msg}"
 
 
-# ---------------------------------------------------------------------------
 # Main check
-# ---------------------------------------------------------------------------
 
 def check_dataset(cfg: dict) -> dict:
     """Try to instantiate and load one batch. Returns a result dict."""
@@ -135,19 +124,19 @@ def check_dataset(cfg: dict) -> dict:
 
     t0 = time.time()
     try:
-        # 1. Instantiate
+        # Instantiate
         cls     = getattr(ds_module, class_name)
         dataset = cls(
             preprocess=_PREPROCESS,
             location=location,
             batch_size=8,
-            num_workers=0,   # 0 workers for checker — avoids multiprocessing issues
+            num_workers=0, 
         )
 
-        # 2. Pull one batch from test loader
+        # Pull one batch from test loader
         batch = next(iter(dataset.test_loader))
 
-        # 3. Basic sanity checks
+        # Basic checks
         if isinstance(batch, dict):
             images = batch["images"]
             labels = batch["labels"]
@@ -158,7 +147,7 @@ def check_dataset(cfg: dict) -> dict:
         assert images.ndim == 4,        f"Expected 4D image tensor, got {images.ndim}D"
         assert images.shape[1] == 3,   f"Expected 3 channels, got {images.shape[1]}"
 
-        # 4. Count total images
+        # Count total images
         n_images = len(dataset.test_dataset)
 
         result["success"]    = True

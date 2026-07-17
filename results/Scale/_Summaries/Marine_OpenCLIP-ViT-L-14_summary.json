@@ -1,0 +1,39 @@
+{
+  "model": "OpenCLIP-ViT-L-14",
+  "dataset": "Marine",
+  "factors": [
+    "in",
+    "size",
+    "amount",
+    "location",
+    "state"
+  ],
+  "simple_acc": 73.84581722704398,
+  "plus_z_acc": 75.41390061378479,
+  "delta_p_stats": {
+    "baseline_acc": 73.84581722704398,
+    "baseline_ci": [
+      73.14546714316971,
+      74.56057180366129
+    ],
+    "context_acc": 75.4139012471738,
+    "context_ci": [
+      74.7064400846036,
+      76.15071840128364
+    ],
+    "delta_p": 1.5680840201298167,
+    "delta_p_ci": [
+      1.225293559915397,
+      1.9256436437896576
+    ],
+    "delta_p_se": 0.18100985413381268,
+    "mcnemar_stat": 73.98384491114702,
+    "mcnemar_p": 0.0,
+    "significant": "True",
+    "mcnemar_b": 202,
+    "mcnemar_c": 417,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.6899244877470757,
+  "f1_macro_plus_z": 0.7077712262293957
+}

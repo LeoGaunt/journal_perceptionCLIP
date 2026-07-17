@@ -1,0 +1,39 @@
+{
+  "model": "SigLIP2-ViT-B-16",
+  "dataset": "Marine",
+  "factors": [
+    "in",
+    "size",
+    "amount",
+    "location",
+    "state"
+  ],
+  "simple_acc": 78.60841659981037,
+  "plus_z_acc": 78.38961482048035,
+  "delta_p_stats": {
+    "baseline_acc": 78.60841659981037,
+    "baseline_ci": [
+      77.90095543724017,
+      79.30876668368464
+    ],
+    "context_acc": 78.38961417839691,
+    "context_ci": [
+      77.71132667201516,
+      79.07537743417694
+    ],
+    "delta_p": -0.21880242141345718,
+    "delta_p_ci": [
+      -0.48136532710961744,
+      0.04376048428269552
+    ],
+    "delta_p_se": 0.13726296157886198,
+    "mcnemar_stat": 2.473529411764706,
+    "mcnemar_p": 0.11577768575893166,
+    "significant": "False",
+    "mcnemar_b": 185,
+    "mcnemar_c": 155,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.7510951133896573,
+  "f1_macro_plus_z": 0.7495885393853561
+}

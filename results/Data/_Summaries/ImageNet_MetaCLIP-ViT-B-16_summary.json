@@ -1,0 +1,37 @@
+{
+  "model": "MetaCLIP-ViT-B-16",
+  "dataset": "ImageNet",
+  "factors": [
+    "background",
+    "quality",
+    "condition"
+  ],
+  "simple_acc": 65.96,
+  "plus_z_acc": 66.40599966049194,
+  "delta_p_stats": {
+    "baseline_acc": 65.96,
+    "baseline_ci": [
+      65.54995,
+      66.38
+    ],
+    "context_acc": 66.40599999999999,
+    "context_ci": [
+      65.99199999999999,
+      66.80199999999999
+    ],
+    "delta_p": 0.44599999999999795,
+    "delta_p_ci": [
+      0.21390000000000298,
+      0.6759999999999988
+    ],
+    "delta_p_se": 0.11955066367273884,
+    "mcnemar_stat": 13.79345088161209,
+    "mcnemar_p": 0.00020404627225312222,
+    "significant": "True",
+    "mcnemar_b": 1675,
+    "mcnemar_c": 1898,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.6541757931129093,
+  "f1_macro_plus_z": 0.6561888822115907
+}

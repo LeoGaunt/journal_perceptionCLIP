@@ -1,0 +1,39 @@
+{
+  "model": "ConvNeXt-B",
+  "dataset": "Dissertation",
+  "factors": [
+    "on",
+    "direction",
+    "amount",
+    "weather",
+    "decker"
+  ],
+  "simple_acc": 99.52153110047847,
+  "plus_z_acc": 99.44598078727722,
+  "delta_p_stats": {
+    "baseline_acc": 99.52153110047847,
+    "baseline_ci": [
+      99.29425837320574,
+      99.7229916897507
+    ],
+    "context_acc": 99.44598337950139,
+    "context_ci": [
+      99.21934021657013,
+      99.67262654243264
+    ],
+    "delta_p": -0.07554772097708451,
+    "delta_p_ci": [
+      -0.27700831024930483,
+      0.10135985897759175
+    ],
+    "delta_p_se": 0.10022651402176905,
+    "mcnemar_stat": 0.26666666666666666,
+    "mcnemar_p": 0.6055766163353462,
+    "significant": "False",
+    "mcnemar_b": 9,
+    "mcnemar_c": 6,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.9950636677532847,
+  "f1_macro_plus_z": 0.9942763435477996
+}

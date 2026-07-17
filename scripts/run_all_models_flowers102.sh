@@ -1,6 +1,4 @@
 #!/bin/bash
-# Run Flowers-102 across all model families for the TPAMI cross-architecture study.
-# Usage: bash scripts/run_all_models_flowers102.sh
 
 export PYTHONPATH="$PYTHONPATH:$PWD"
 

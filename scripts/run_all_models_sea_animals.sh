@@ -1,5 +1,5 @@
 #!/bin/bash
-# Run Sea Animals dataset across all model families.
+
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 DATASET="Marine"

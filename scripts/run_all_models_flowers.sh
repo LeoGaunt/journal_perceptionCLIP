@@ -1,5 +1,5 @@
 #!/bin/bash
-# Run Flowers dataset across all model families.
+
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 DATASET="Flowers"

@@ -1,0 +1,25 @@
+# --- Core deep learning ---
+torch==2.13.0
+torchvision==0.28.0
+
+# --- Model zoo (OpenCLIP / MetaCLIP / SigLIP checkpoints + tokenizers) ---
+open_clip_torch==3.3.0
+
+# --- Vendored OpenAI CLIP tokenizer (clip/tokenizer.py) ---
+ftfy==6.3.1
+regex==2026.7.10
+
+# --- Image augmentation (src/models/transformer.py) ---
+kornia==0.8.3
+
+# --- Numerics & statistics (bootstrap CIs, McNemar, Δp) ---
+numpy==2.5.1
+scipy==1.18.0
+
+# --- Data handling & figures (visualizations/figures.ipynb) ---
+pandas==3.0.3
+matplotlib==3.11.0
+
+# --- Misc ---
+Pillow==12.3.0
+tqdm==4.68.4

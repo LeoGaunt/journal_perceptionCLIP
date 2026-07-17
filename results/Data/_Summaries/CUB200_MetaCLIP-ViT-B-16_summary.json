@@ -1,0 +1,37 @@
+{
+  "model": "MetaCLIP-ViT-B-16",
+  "dataset": "CUB200",
+  "factors": [
+    "size",
+    "background",
+    "condition"
+  ],
+  "simple_acc": 65.51605108733172,
+  "plus_z_acc": 64.89471793174744,
+  "delta_p_stats": {
+    "baseline_acc": 65.51605108733172,
+    "baseline_ci": [
+      64.30747324818778,
+      66.74188816016569
+    ],
+    "context_acc": 64.89471867449085,
+    "context_ci": [
+      63.65205384880911,
+      66.08603727994478
+    ],
+    "delta_p": -0.6213324128408715,
+    "delta_p_ci": [
+      -1.4152571625819843,
+      0.1553331032102201
+    ],
+    "delta_p_se": 0.39930663063200156,
+    "mcnemar_stat": 2.2685185185185186,
+    "mcnemar_p": 0.13202605624954722,
+    "significant": "False",
+    "mcnemar_b": 288,
+    "mcnemar_c": 252,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.626664710892162,
+  "f1_macro_plus_z": 0.6193000303772165
+}

@@ -1,17 +1,5 @@
 #!/bin/bash
-# ============================================================
-# Objective group — all ViT-B-16 scale.
-# Only training loss / objective changes.
-#   OpenCLIP-ViT-B-16  LAION-2B   softmax contrastive
-#   SigLIP-ViT-B-16    WebLI      sigmoid pairwise (v1)
-#   SigLIP2-ViT-B-16   WebLI      sigmoid pairwise (v2)
-#
-# Note: training data differs (LAION vs WebLI) — this is an
-# unavoidable limitation acknowledged in the paper; no model
-# exists with identical training data but different objective.
-#
-# Usage: bash scripts/run_objective_group.sh
-# ============================================================
+
 export PYTHONPATH="$PYTHONPATH:$PWD"
 
 MODELS=(

@@ -1,0 +1,39 @@
+{
+  "model": "OpenCLIP-ViT-B-16",
+  "dataset": "Dissertation",
+  "factors": [
+    "on",
+    "direction",
+    "amount",
+    "weather",
+    "decker"
+  ],
+  "simple_acc": 99.3704356585243,
+  "plus_z_acc": 99.32007193565369,
+  "delta_p_stats": {
+    "baseline_acc": 99.3704356585243,
+    "baseline_ci": [
+      99.093427348275,
+      99.59770838579702
+    ],
+    "context_acc": 99.32007051120625,
+    "context_ci": [
+      99.06824477461596,
+      99.5467136741375
+    ],
+    "delta_p": -0.050365147318046866,
+    "delta_p_ci": [
+      -0.3021908839083376,
+      0.20146058927222876
+    ],
+    "delta_p_se": 0.13292170142913054,
+    "mcnemar_stat": 0.03571428571428571,
+    "mcnemar_p": 0.8501067391385259,
+    "significant": "False",
+    "mcnemar_b": 15,
+    "mcnemar_c": 13,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.9935106935468742,
+  "f1_macro_plus_z": 0.9929761664478945
+}

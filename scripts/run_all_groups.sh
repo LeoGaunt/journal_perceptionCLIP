@@ -1,7 +1,6 @@
 #!/bin/bash
 # ============================================================
-# Master script — runs all four comparison groups in sequence.
-# Expected total runtime on A100: ~12-18 hours.
+# Master script — runs all four comparison groups in sequence. TAKES A LONG TIME
 #
 # Run individual groups independently if you want to parallelise
 # across multiple Colab sessions:
@@ -17,7 +16,7 @@ export PYTHONPATH="$PYTHONPATH:$PWD"
 SCRIPT_DIR="$(dirname "$0")"
 
 echo "================================================"
-echo "  TPAMI Experiment Suite — All Comparison Groups"
+echo " All Comparison Groups"
 echo "================================================"
 echo ""
 

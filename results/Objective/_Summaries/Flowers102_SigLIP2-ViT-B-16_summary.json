@@ -1,0 +1,38 @@
+{
+  "model": "SigLIP2-ViT-B-16",
+  "dataset": "Flowers102",
+  "factors": [
+    "background",
+    "illumination",
+    "petals",
+    "quality"
+  ],
+  "simple_acc": 84.59912180842414,
+  "plus_z_acc": 86.1440896987915,
+  "delta_p_stats": {
+    "baseline_acc": 84.59912180842414,
+    "baseline_ci": [
+      83.72093023255815,
+      85.47771995446413
+    ],
+    "context_acc": 86.14408846966987,
+    "context_ci": [
+      85.28215970076435,
+      87.03894942267034
+    ],
+    "delta_p": 1.5449666612457236,
+    "delta_p_ci": [
+      1.0245568385103265,
+      2.0653764839811406
+    ],
+    "delta_p_se": 0.27250330938535533,
+    "mcnemar_stat": 32.847583643122675,
+    "mcnemar_p": 9.96748916737289e-09,
+    "significant": "True",
+    "mcnemar_b": 87,
+    "mcnemar_c": 182,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.8033176231830492,
+  "f1_macro_plus_z": 0.836606221935142
+}

@@ -1,0 +1,37 @@
+{
+  "model": "SigLIP-ViT-B-16",
+  "dataset": "ImageNet",
+  "factors": [
+    "background",
+    "quality",
+    "condition"
+  ],
+  "simple_acc": 75.676,
+  "plus_z_acc": 75.6659984588623,
+  "delta_p_stats": {
+    "baseline_acc": 75.676,
+    "baseline_ci": [
+      75.3239,
+      76.054
+    ],
+    "context_acc": 75.666,
+    "context_ci": [
+      75.29390000000001,
+      76.03205
+    ],
+    "delta_p": -0.010000000000005116,
+    "delta_p_ci": [
+      -0.20799999999999708,
+      0.18399999999999528
+    ],
+    "delta_p_se": 0.10148137509289767,
+    "mcnemar_stat": 0.006276971361318164,
+    "mcnemar_p": 0.9368517989742845,
+    "significant": "False",
+    "mcnemar_b": 1277,
+    "mcnemar_c": 1272,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.7521628502683947,
+  "f1_macro_plus_z": 0.7510244237518499
+}

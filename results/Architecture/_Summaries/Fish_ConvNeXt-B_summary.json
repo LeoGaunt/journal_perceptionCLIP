@@ -1,0 +1,39 @@
+{
+  "model": "ConvNeXt-B",
+  "dataset": "Fish",
+  "factors": [
+    "in",
+    "size",
+    "amount",
+    "location",
+    "liveness"
+  ],
+  "simple_acc": 28.415419897346293,
+  "plus_z_acc": 31.331223249435425,
+  "delta_p_stats": {
+    "baseline_acc": 28.415419897346293,
+    "baseline_ci": [
+      27.421371628262534,
+      29.321830293764332
+    ],
+    "context_acc": 31.33122201594409,
+    "context_ci": [
+      30.381129190783007,
+      32.357759091405484
+    ],
+    "delta_p": 2.915802118597796,
+    "delta_p_ci": [
+      2.162007207600739,
+      3.6914382439663616
+    ],
+    "delta_p_se": 0.3960722535823889,
+    "mcnemar_stat": 54.30237912509593,
+    "mcnemar_p": 1.7186252421197423e-13,
+    "significant": "True",
+    "mcnemar_b": 518,
+    "mcnemar_c": 785,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.25655760820365653,
+  "f1_macro_plus_z": 0.29586695126777424
+}

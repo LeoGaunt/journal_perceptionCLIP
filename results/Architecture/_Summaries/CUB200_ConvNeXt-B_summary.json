@@ -1,0 +1,37 @@
+{
+  "model": "ConvNeXt-B",
+  "dataset": "CUB200",
+  "factors": [
+    "size",
+    "background",
+    "condition"
+  ],
+  "simple_acc": 71.95374525371074,
+  "plus_z_acc": 71.29789590835571,
+  "delta_p_stats": {
+    "baseline_acc": 71.95374525371074,
+    "baseline_ci": [
+      70.77968588194685,
+      73.12737314463237
+    ],
+    "context_acc": 71.29789437348981,
+    "context_ci": [
+      70.15878494994823,
+      72.45426303072144
+    ],
+    "delta_p": -0.6558508802209246,
+    "delta_p_ci": [
+      -1.2599240593717642,
+      -0.034518467380040274
+    ],
+    "delta_p_se": 0.3128213443944868,
+    "mcnemar_stat": 4.098802395209581,
+    "mcnemar_p": 0.04291360066061056,
+    "significant": "True",
+    "mcnemar_b": 186,
+    "mcnemar_c": 148,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.7074904479709031,
+  "f1_macro_plus_z": 0.7000634114620891
+}

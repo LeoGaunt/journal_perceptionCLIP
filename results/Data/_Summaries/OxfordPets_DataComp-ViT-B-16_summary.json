@@ -1,0 +1,38 @@
+{
+  "model": "DataComp-ViT-B-16",
+  "dataset": "OxfordPets",
+  "factors": [
+    "species",
+    "background",
+    "pose",
+    "interaction"
+  ],
+  "simple_acc": 90.37884982284001,
+  "plus_z_acc": 92.39574670791626,
+  "delta_p_stats": {
+    "baseline_acc": 90.37884982284001,
+    "baseline_ci": [
+      89.42491142000544,
+      91.2782774597983
+    ],
+    "context_acc": 92.39574816026165,
+    "context_ci": [
+      91.52357590624149,
+      93.21340964840556
+    ],
+    "delta_p": 2.0168983374216367,
+    "delta_p_ci": [
+      1.226492232215859,
+      2.780049059689283
+    ],
+    "delta_p_se": 0.3978064029700826,
+    "mcnemar_stat": 23.790178571428573,
+    "mcnemar_p": 1.0742922994522175e-06,
+    "significant": "True",
+    "mcnemar_b": 75,
+    "mcnemar_c": 149,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.8940210072292946,
+  "f1_macro_plus_z": 0.9225416811202165
+}

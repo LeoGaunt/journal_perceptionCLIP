@@ -1,0 +1,36 @@
+{
+  "model": "ConvNeXt-B",
+  "dataset": "EuroSAT",
+  "factors": [
+    "condition",
+    "source"
+  ],
+  "simple_acc": 48.75555555555556,
+  "plus_z_acc": 54.285186529159546,
+  "delta_p_stats": {
+    "baseline_acc": 48.75555555555556,
+    "baseline_ci": [
+      48.14805555555555,
+      49.32222222222222
+    ],
+    "context_acc": 54.28518518518518,
+    "context_ci": [
+      53.699814814814815,
+      54.89268518518519
+    ],
+    "delta_p": 5.529629629629618,
+    "delta_p_ci": [
+      4.959259259259263,
+      6.088981481481485
+    ],
+    "delta_p_se": 0.2918028058604422,
+    "mcnemar_stat": 352.2810571292926,
+    "mcnemar_p": 0.0,
+    "significant": "True",
+    "mcnemar_b": 2413,
+    "mcnemar_c": 3906,
+    "alpha": 0.05
+  },
+  "f1_macro_simple": 0.4365234012017831,
+  "f1_macro_plus_z": 0.5210807597555831
+}

@@ -1,6 +1,4 @@
 #!/bin/bash
-# Run EuroSAT across all model families for the TPAMI cross-architecture study.
-# Usage: bash scripts/run_all_models_eurosat.sh
 
 export PYTHONPATH="$PYTHONPATH:$PWD"
 

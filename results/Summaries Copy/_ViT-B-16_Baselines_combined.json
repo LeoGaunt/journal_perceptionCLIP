@@ -1,0 +1,342 @@
+[
+  {
+    "model": "OpenCLIP-ViT-B-16",
+    "dataset": "CUB200",
+    "factors": [
+      "size",
+      "background",
+      "condition"
+    ],
+    "simple_acc": 70.46945115636866,
+    "plus_z_acc": 69.79634165763855,
+    "delta_p_stats": {
+      "baseline_acc": 70.46945115636866,
+      "baseline_ci": [
+        69.34716948567484,
+        71.66033828098033
+      ],
+      "context_acc": 69.79634104245771,
+      "context_ci": [
+        68.69131860545392,
+        71.02174663444943
+      ],
+      "delta_p": -0.6731101139109512,
+      "delta_p_ci": [
+        -1.3117017604418302,
+        -0.017259233690025688
+      ],
+      "delta_p_se": 0.32944672669954234,
+      "mcnemar_stat": 4.022284122562674,
+      "mcnemar_p": 0.044902861533097416,
+      "significant": "True",
+      "mcnemar_b": 199,
+      "mcnemar_c": 160,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.6869829128878969,
+    "f1_macro_plus_z": 0.6834199269304319
+  },
+  {
+    "model": "OpenCLIP-ViT-B-16",
+    "dataset": "Dissertation",
+    "factors": [
+      "on",
+      "direction",
+      "amount",
+      "weather",
+      "decker"
+    ],
+    "simple_acc": 99.3704356585243,
+    "plus_z_acc": 99.32007193565369,
+    "delta_p_stats": {
+      "baseline_acc": 99.3704356585243,
+      "baseline_ci": [
+        99.093427348275,
+        99.59770838579702
+      ],
+      "context_acc": 99.32007051120625,
+      "context_ci": [
+        99.06824477461596,
+        99.5467136741375
+      ],
+      "delta_p": -0.050365147318046866,
+      "delta_p_ci": [
+        -0.3021908839083376,
+        0.20146058927222876
+      ],
+      "delta_p_se": 0.13292170142913054,
+      "mcnemar_stat": 0.03571428571428571,
+      "mcnemar_p": 0.8501067391385259,
+      "significant": "False",
+      "mcnemar_b": 15,
+      "mcnemar_c": 13,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.9935106935468742,
+    "f1_macro_plus_z": 0.9929761664478945
+  },
+  {
+    "model": "OpenCLIP-ViT-B-16",
+    "dataset": "EuroSAT",
+    "factors": [
+      "condition",
+      "source"
+    ],
+    "simple_acc": 49.63703703703703,
+    "plus_z_acc": 51.47036910057068,
+    "delta_p_stats": {
+      "baseline_acc": 49.63703703703703,
+      "baseline_ci": [
+        49.04805555555555,
+        50.23342592592592
+      ],
+      "context_acc": 51.47037037037037,
+      "context_ci": [
+        50.86287037037037,
+        52.1074074074074
+      ],
+      "delta_p": 1.8333333333333357,
+      "delta_p_ci": [
+        1.2110185185185256,
+        2.4446296296296333
+      ],
+      "delta_p_se": 0.3203878787320059,
+      "mcnemar_stat": 33.57215572981153,
+      "mcnemar_p": 6.866871848920653E-9,
+      "significant": "True",
+      "mcnemar_b": 3387,
+      "mcnemar_c": 3882,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.4451629386033279,
+    "f1_macro_plus_z": 0.49555794533859343
+  },
+  {
+    "model": "OpenCLIP-ViT-B-16",
+    "dataset": "Fish",
+    "factors": [
+      "in",
+      "size",
+      "amount",
+      "location",
+      "liveness"
+    ],
+    "simple_acc": 28.786720541662113,
+    "plus_z_acc": 36.02708280086517,
+    "delta_p_stats": {
+      "baseline_acc": 28.786720541662113,
+      "baseline_ci": [
+        27.869389538058314,
+        29.67128972370864
+      ],
+      "context_acc": 36.02708310582069,
+      "context_ci": [
+        35.09883149503112,
+        36.99901714535328
+      ],
+      "delta_p": 7.240362564158573,
+      "delta_p_ci": [
+        6.432237632412363,
+        8.124931746205089
+      ],
+      "delta_p_se": 0.4319708700889882,
+      "mcnemar_stat": 279.3142128744423,
+      "mcnemar_p": 0.0,
+      "significant": "True",
+      "mcnemar_b": 453,
+      "mcnemar_c": 1116,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.2423784075184545,
+    "f1_macro_plus_z": 0.2924743188832186
+  },
+  {
+    "model": "OpenCLIP-ViT-B-16",
+    "dataset": "Flowers102",
+    "factors": [
+      "background",
+      "illumination",
+      "petals",
+      "quality"
+    ],
+    "simple_acc": 69.55602536997885,
+    "plus_z_acc": 72.25565314292908,
+    "delta_p_stats": {
+      "baseline_acc": 69.55602536997885,
+      "baseline_ci": [
+        68.3851032688242,
+        70.69442185721255
+      ],
+      "context_acc": 72.25565132541877,
+      "context_ci": [
+        71.10099203122459,
+        73.39404781265246
+      ],
+      "delta_p": 2.699625955439913,
+      "delta_p_ci": [
+        2.0979020979020935,
+        3.317612619938204
+      ],
+      "delta_p_se": 0.31008903065645366,
+      "mcnemar_stat": 74.79395604395604,
+      "mcnemar_p": 0.0,
+      "significant": "True",
+      "mcnemar_b": 99,
+      "mcnemar_c": 265,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.6307048063311538,
+    "f1_macro_plus_z": 0.6576190505976057
+  },
+  {
+    "model": "OpenCLIP-ViT-B-16",
+    "dataset": "ImageNet",
+    "factors": [
+      "background",
+      "quality",
+      "condition"
+    ],
+    "simple_acc": 69.256,
+    "plus_z_acc": 69.30199861526489,
+    "delta_p_stats": {
+      "baseline_acc": 69.256,
+      "baseline_ci": [
+        68.842,
+        69.67605
+      ],
+      "context_acc": 69.30199999999999,
+      "context_ci": [
+        68.92394999999999,
+        69.702
+      ],
+      "delta_p": 0.04599999999999227,
+      "delta_p_ci": [
+        -0.15204999999999663,
+        0.24399999999999977
+      ],
+      "delta_p_se": 0.10374321737624964,
+      "mcnemar_stat": 0.17491868449584388,
+      "mcnemar_p": 0.6757769083296842,
+      "significant": "False",
+      "mcnemar_b": 1372,
+      "mcnemar_c": 1395,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.6887067572246526,
+    "f1_macro_plus_z": 0.6878871685832669
+  },
+  {
+    "model": "OpenCLIP-ViT-B-16",
+    "dataset": "Marine",
+    "factors": [
+      "in",
+      "size",
+      "amount",
+      "location",
+      "state"
+    ],
+    "simple_acc": 68.4268105900372,
+    "plus_z_acc": 69.63751912117004,
+    "delta_p_stats": {
+      "baseline_acc": 68.4268105900372,
+      "baseline_ci": [
+        67.66100211509007,
+        69.19991247903144
+      ],
+      "context_acc": 69.63751732185837,
+      "context_ci": [
+        68.87170884691123,
+        70.45437969513529
+      ],
+      "delta_p": 1.210706731821162,
+      "delta_p_ci": [
+        0.7949821311355907,
+        1.6339070819050432
+      ],
+      "delta_p_se": 0.2122409314077136,
+      "mcnemar_stat": 31.879391100702577,
+      "mcnemar_p": 1.6404849478846018E-8,
+      "significant": "True",
+      "mcnemar_b": 344,
+      "mcnemar_c": 510,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.6305394570611852,
+    "f1_macro_plus_z": 0.6454116251197097
+  },
+  {
+    "model": "OpenCLIP-ViT-B-16",
+    "dataset": "OxfordPets",
+    "factors": [
+      "species",
+      "background",
+      "pose",
+      "interaction"
+    ],
+    "simple_acc": 89.34314527119106,
+    "plus_z_acc": 90.05178809165955,
+    "delta_p_stats": {
+      "baseline_acc": 89.34314527119106,
+      "baseline_ci": [
+        88.30744071954211,
+        90.29708367402563
+      ],
+      "context_acc": 90.05178522758244,
+      "context_ci": [
+        89.04265467429818,
+        91.03297901335515
+      ],
+      "delta_p": 0.7086399563913801,
+      "delta_p_ci": [
+        0.0,
+        1.4717906786590351
+      ],
+      "delta_p_se": 0.3738377423038489,
+      "mcnemar_stat": 3.289473684210526,
+      "mcnemar_p": 0.06972536918351291,
+      "significant": "False",
+      "mcnemar_b": 82,
+      "mcnemar_c": 108,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.8795264928610383,
+    "f1_macro_plus_z": 0.897804172146187
+  },
+  {
+    "model": "OpenCLIP-ViT-B-16",
+    "dataset": "UCM",
+    "factors": [
+      "condition",
+      "source",
+      "land"
+    ],
+    "simple_acc": 70.19047619047619,
+    "plus_z_acc": 69.57142949104309,
+    "delta_p_stats": {
+      "baseline_acc": 70.19047619047619,
+      "baseline_ci": [
+        68.23809523809524,
+        72.14285714285714
+      ],
+      "context_acc": 69.57142857142857,
+      "context_ci": [
+        67.61904761904762,
+        71.61904761904762
+      ],
+      "delta_p": -0.6190476190476204,
+      "delta_p_ci": [
+        -2.4761904761904763,
+        1.333333333333342
+      ],
+      "delta_p_se": 0.9515520774311406,
+      "mcnemar_stat": 0.3469879518072289,
+      "mcnemar_p": 0.5558231498321651,
+      "significant": "False",
+      "mcnemar_b": 214,
+      "mcnemar_c": 201,
+      "alpha": 0.05
+    },
+    "f1_macro_simple": 0.6854141258536358,
+    "f1_macro_plus_z": 0.6896234053388988
+  }
+]
