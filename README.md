@@ -58,7 +58,6 @@ git clone <repo-url>
 cd journal_perceptionCLIP
 pip install -r requirements.txt
 ```
-> TODO: REQUIREMENTS.txt
 Requirements are pinned to the versions used for the paper. The `open_clip_torch` version matters: pretrained tags are resolved by the installed version, so an incompatible version may silently load different weights.
 
 A CUDA-capable GPU is required. All published results were produced on a single NVIDIA A100 (Google Colab); the full suite takes roughly 12–18 hours.
