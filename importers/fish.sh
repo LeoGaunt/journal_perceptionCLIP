@@ -15,22 +15,22 @@ unzip -q fish.zip -d fish_raw
 # Get folder
 cd fish_raw/FishImgDataset || { echo "Dataset structure not found"; exit 1; }
 
+before_src=$(find train test val -mindepth 2 -maxdepth 2 -type f ! -name '.*' | wc -l)
+
 # Loop through train, test, val
 for split in train test val; do
-    if [ -d "$split" ]; then
-        echo "Processing $split..."
-        
-        for class_dir in "$split"/*; do
-            class_name=$(basename "$class_dir")
-            
-            # Create class folder in fish if it doesn't exist
-            mkdir -p ../../fish/"$class_name"
-            
-            # Move images into combined folder
-            mv "$class_dir"/* ../../fish/"$class_name"/ 2>/dev/null || true
+    for class_dir in "$split"/*; do
+        class_name=$(basename "$class_dir")
+        mkdir -p ../../fish/"$class_name"
+        for img in "$class_dir"/*; do
+            cp "$img" ../../fish/"$class_name"/"${split}_$(basename "$img")"
         done
-    fi
+    done
 done
+
+after_dst=$(find ../../fish -type f | wc -l)
+echo "source files:      $before_src"
+echo "dest before:       $after_dst"
 
 echo "Cleaning up..."
 cd ../../
