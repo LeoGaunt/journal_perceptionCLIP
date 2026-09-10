@@ -54,7 +54,7 @@ Expected directory layouts are documented in [`DATA.md`](DATA.md). Download/form
 ## Installation
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/LeoGaunt/journal_perceptionCLIP.git
 cd journal_perceptionCLIP
 pip install -r requirements.txt
 ```
