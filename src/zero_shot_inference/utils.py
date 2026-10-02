@@ -15,6 +15,13 @@ from itertools import product
 
 from src.models.modeling import ClassificationHead
 
+def resolve_logit_scale(args, clip_model):
+    """Fixed common scale if --common_logit_scale is set, else the learned exp(logit_scale)."""
+    common = getattr(args, "common_logit_scale", None)
+    if common is not None:
+        return float(common)
+    return float(clip_model.logit_scale.exp().item())
+
 
 # ---------------------------------------------------------------------------
 # Classifier construction
@@ -25,7 +32,7 @@ def get_zeroshot_classifier(args, clip_model, classnames, template):
     Standard zero-shot head: average embeddings across templates per class.
     clip_model must expose .tokenize() and .encode_text().
     """
-    logit_scale = clip_model.logit_scale
+    logit_scale = resolve_logit_scale(args, clip_model)
     device = args.device
     clip_model.eval()
     clip_model.to(device)
@@ -41,7 +48,7 @@ def get_zeroshot_classifier(args, clip_model, classnames, template):
             zeroshot_weights.append(embeddings)
 
         zeroshot_weights = torch.cat(zeroshot_weights, dim=0).to(device)
-        zeroshot_weights *= logit_scale.exp()
+        zeroshot_weights *= logit_scale
 
     return ClassificationHead(normalize=True, weights=zeroshot_weights)
 
@@ -52,7 +59,7 @@ def get_zeroshot_classifier_flat_advance(args, clip_model, classnames, template_
     template_list is a list of lists of functions — one inner list per
     context combination, each inner list contains one or more phrasings.
     """
-    logit_scale = clip_model.logit_scale
+    logit_scale = resolve_logit_scale(args, clip_model)
     device = args.device
     clip_model.eval()
     clip_model.to(device)
@@ -69,7 +76,7 @@ def get_zeroshot_classifier_flat_advance(args, clip_model, classnames, template_
                 zeroshot_weights.append(embeddings)
 
         zeroshot_weights = torch.cat(zeroshot_weights, dim=0).to(device)
-        zeroshot_weights *= logit_scale.exp()
+        zeroshot_weights *= logit_scale
 
     return ClassificationHead(normalize=True, weights=zeroshot_weights)
 
@@ -81,7 +88,7 @@ def get_zeroshot_classifier_puretext_advance(args, clip_model, template_texts_li
     device = args.device
     clip_model.eval()
     clip_model.to(device)
-    logit_scale = clip_model.logit_scale
+    logit_scale = resolve_logit_scale(args, clip_model)
 
     with torch.no_grad():
         zeroshot_weights = []
@@ -93,7 +100,7 @@ def get_zeroshot_classifier_puretext_advance(args, clip_model, template_texts_li
             zeroshot_weights.append(embeddings)
 
         zeroshot_weights = torch.cat(zeroshot_weights, dim=0).to(device)
-        zeroshot_weights *= logit_scale.exp()
+        zeroshot_weights *= logit_scale
 
     return ClassificationHead(normalize=True, weights=zeroshot_weights)
 

@@ -55,6 +55,7 @@ from src.zero_shot_inference.utils import (
     compose_template,
 )
 from src.zero_shot_inference.perceptionclip_two_step import classify as classify_twostep
+from src.zero_shot_inference.utils import resolve_logit_scale
 from src.evaluation.statistical import delta_p_with_stats, summarise_results
 from src.evaluation.metrics import confusion_matrix_report
 
@@ -74,6 +75,7 @@ def parse_args():
     p.add_argument("--main_template",    type=str, required=True)
     p.add_argument("--factor_templates", type=str, required=True)
     p.add_argument("--temperature",      type=float, default=1.0)
+    p.add_argument("--common_logit_scale", type=float, default=None)
     p.add_argument("--infer_mode",       type=int,   default=0, choices=[0, 1])
     p.add_argument("--save_path",        type=str,   default="./results")
     p.add_argument("--save_name",        type=str,   default="experiment")
@@ -82,6 +84,8 @@ def parse_args():
                    help="Skip Simple condition (e.g. results already saved).")
     p.add_argument("--skip_domain",      action="store_true")
     args = p.parse_args()
+    if args.common_logit_scale is not None:
+        args.save_name = f"{args.save_name}_s{args.common_logit_scale:g}"
     args.device = "cuda" if torch.cuda.is_available() else "cpu"
     return args
 
@@ -187,6 +191,17 @@ def main():
 
     # Load model once
     model = VLMEncoder(args, keep_lang=True).to(args.device)
+    
+    learned_scale = float(model.logit_scale.exp().item())
+    used_scale    = resolve_logit_scale(args, model)
+    print(f"  Logit scale: learned={learned_scale:.4f}  used={used_scale:.4f}  tau={args.temperature}")
+    scale_info = {
+        "learned_logit_scale": learned_scale,
+        "logit_scale_used":    used_scale,
+        "common_logit_scale":  args.common_logit_scale,
+        "temperature":         args.temperature,
+        "infer_mode":          args.infer_mode,
+    }
 
     # Load dataset
     dataset_class = getattr(datasets, args.dataset)
@@ -221,6 +236,7 @@ def main():
     print("\n[3/3] +Z (PerceptionCLIP contextual)")
     plus_z_results = _run_plus_z(model, dataset, args)
     plus_z_results["condition"] = "+Z"
+    plus_z_results.update(scale_info)
     _save_condition(plus_z_results, args.save_path, args.save_name, "plus_z")
     collected["+Z"] = plus_z_results
 
@@ -255,6 +271,7 @@ def main():
             "delta_p_stats": summary,
             "f1_macro_simple": collected["simple"]["f1_macro"],
             "f1_macro_plus_z": collected["+Z"]["f1_macro"],
+            **scale_info,
         }
         summary_path = os.path.join(
             args.save_path, f"{args.save_name}_summary.json"
