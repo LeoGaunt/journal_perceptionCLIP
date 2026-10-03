@@ -4,8 +4,8 @@ export PYTHONPATH="$PYTHONPATH:$PWD"
 
 MODELS=(
     "OpenCLIP-ViT-B-16:8192"
-    "MetaCLIP-ViT-B-16:8192"
-    "DataComp-ViT-B-16:8192"
+    "MetaCLIP-ViT-B-16:4096"
+    "DataComp-ViT-B-16:4096"
 )
 
 DATASETS=(
