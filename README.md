@@ -51,6 +51,8 @@ Nine datasets are used. Two carry legacy internal names that differ from the pap
 
 Expected directory layouts are documented in [`DATA.md`](DATA.md). Download/formatting scripts for each dataset are in [`importers/`](importers/) (`bash importers/run_all.sh`). **ImageNet must be obtained separately** subject to its terms of access and is not downloaded automatically.
 
+COCO-Transport is the only dataset that was created for this investiation, it is a subset of MS-COCO with only 2 visually distinct classes, please see Zenodo (`10.5281/zenodo.23136295`) for the manifest and dataset.
+
 ## Installation
 
 ```bash
