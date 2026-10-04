@@ -123,8 +123,8 @@ if $RUN_DATA; then
     echo "════════════════════════════════════════════════════════"
     echo ""
 
-    run_experiment "Data" "MetaCLIP-ViT-B-16"  8192
-    run_experiment "Data" "DataComp-ViT-B-16"  8192
+    run_experiment "Data" "MetaCLIP-ViT-B-16"  4096
+    run_experiment "Data" "DataComp-ViT-B-16"  4096
 
     echo "✓ Data group complete → ./results/data/ImageNet/"
     echo ""
