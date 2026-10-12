@@ -22,16 +22,21 @@
     "delta_p": 1.2380952380952408,
     "delta_p_ci": [
       -0.33333333333332993,
-      2.809523809523806
+      2.8095238095238173
     ],
-    "delta_p_se": 0.8094845729186936,
-    "mcnemar_stat": 2.0833333333333335,
-    "mcnemar_p": 0.14891467317876161,
+    "delta_p_se": 0.8101569584531574,
+    "mcnemar_stat": 2.0695364238410594,
+    "mcnemar_p": 0.15026719072648242,
     "significant": "False",
-    "mcnemar_b": 137,
-    "mcnemar_c": 163,
+    "mcnemar_b": 138,
+    "mcnemar_c": 164,
     "alpha": 0.05
   },
   "f1_macro_simple": 0.6844479956648207,
-  "f1_macro_plus_z": 0.699526645550061
+  "f1_macro_plus_z": 0.6993286104522008,
+  "learned_logit_scale": 100.0,
+  "logit_scale_used": 100.0,
+  "common_logit_scale": null,
+  "temperature": 1.0,
+  "infer_mode": 0
 }

@@ -34,5 +34,10 @@
     "alpha": 0.05
   },
   "f1_macro_simple": 0.8795264928610383,
-  "f1_macro_plus_z": 0.897804172146187
+  "f1_macro_plus_z": 0.897804172146187,
+  "learned_logit_scale": 100.0,
+  "logit_scale_used": 100.0,
+  "common_logit_scale": null,
+  "temperature": 1.0,
+  "infer_mode": 0
 }

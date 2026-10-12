@@ -12,20 +12,20 @@
     "delta_p_stats": {
       "baseline_acc": 62.2885743872972,
       "baseline_ci": [
-        61.04590956161546,
-        63.51397997928891
+        61.07999654815326,
+        63.53123921297894
       ],
       "context_acc": 61.51190887124611,
       "context_ci": [
-        60.217466344494305,
-        62.73731446323784
+        60.18294787711426,
+        62.823610631687956
       ],
       "delta_p": -0.7766655160510894,
       "delta_p_ci": [
-        -1.6051087331722447,
-        0.06903693476010275
+        -1.6223679668622704,
+        0.051777701070077065
       ],
-      "delta_p_se": 0.42684756269758,
+      "delta_p_se": 0.4193948293059366,
       "mcnemar_stat": 3.127625201938611,
       "mcnemar_p": 0.07697579611423255,
       "significant": "False",
@@ -34,7 +34,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.6011477773733894,
-    "f1_macro_plus_z": 0.5831465761165783
+    "f1_macro_plus_z": 0.5831465761165783,
+    "learned_logit_scale": 117.33076477050781,
+    "logit_scale_used": 117.33076477050781,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP2-ViT-B-16",
@@ -49,20 +54,20 @@
     "delta_p_stats": {
       "baseline_acc": 60.71798412150501,
       "baseline_ci": [
-        59.38859164653089,
-        61.97833966171902
+        59.47531929582327,
+        61.96108042802899
       ],
       "context_acc": 58.940283051432516,
       "context_ci": [
-        57.594062823610635,
+        57.66309975837073,
         60.16568864342423
       ],
       "delta_p": -1.7777010700724958,
       "delta_p_ci": [
-        -2.5716258198135944,
-        -0.9665170866413497
+        -2.5198481187435284,
+        -0.9660856057991017
       ],
-      "delta_p_se": 0.41484908209824173,
+      "delta_p_se": 0.40349537110591327,
       "mcnemar_stat": 18.61180679785331,
       "mcnemar_p": 0.000016022515135771798,
       "significant": "True",
@@ -71,7 +76,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.5879346590798908,
-    "f1_macro_plus_z": 0.5703870435285749
+    "f1_macro_plus_z": 0.5703870435285749,
+    "learned_logit_scale": 112.66889953613281,
+    "logit_scale_used": 112.66889953613281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP-ViT-B-16",
@@ -110,7 +120,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.9950618636583757,
-    "f1_macro_plus_z": 0.9906198770733827
+    "f1_macro_plus_z": 0.9906198770733827,
+    "learned_logit_scale": 117.33076477050781,
+    "logit_scale_used": 117.33076477050781,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP2-ViT-B-16",
@@ -149,7 +164,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.9961021846023432,
-    "f1_macro_plus_z": 0.9665717809189832
+    "f1_macro_plus_z": 0.9665717809189832,
+    "learned_logit_scale": 112.66889953613281,
+    "logit_scale_used": 112.66889953613281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP-ViT-B-16",
@@ -185,7 +205,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.2938188118139114,
-    "f1_macro_plus_z": 0.39829284265340814
+    "f1_macro_plus_z": 0.39829284265340814,
+    "learned_logit_scale": 117.33076477050781,
+    "logit_scale_used": 117.33076477050781,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP2-ViT-B-16",
@@ -221,7 +246,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.35833491214757396,
-    "f1_macro_plus_z": 0.40478060538933136
+    "f1_macro_plus_z": 0.40478060538933136,
+    "learned_logit_scale": 112.66889953613281,
+    "logit_scale_used": 112.66889953613281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP-ViT-B-16",
@@ -233,34 +263,39 @@
       "location",
       "liveness"
     ],
-    "simple_acc": 47.788577044883695,
-    "plus_z_acc": 52.60456204414368,
+    "simple_acc": 47.65090581071939,
+    "plus_z_acc": 52.37164497375488,
     "delta_p_stats": {
-      "baseline_acc": 47.788577044883695,
+      "baseline_acc": 47.65090581071939,
       "baseline_ci": [
-        46.729278147865024,
-        48.771431691602054
+        46.81631962715177,
+        48.508231226039236
       ],
-      "context_acc": 52.60456481380365,
+      "context_acc": 52.37164549349771,
       "context_ci": [
-        51.59986895271377,
-        53.71846674675111
+        51.49966173043674,
+        53.23630008268812
       ],
-      "delta_p": 4.815987768919953,
+      "delta_p": 4.720739682778323,
       "delta_p_ci": [
-        4.040624658731024,
-        5.569782679917003
+        4.111854468916787,
+        5.397278809291134
       ],
-      "delta_p_se": 0.394520944290348,
-      "mcnemar_stat": 142.45768947755704,
+      "delta_p_se": 0.3272577690261707,
+      "mcnemar_stat": 199.55786802030457,
       "mcnemar_p": 0.0,
       "significant": "True",
-      "mcnemar_b": 459,
-      "mcnemar_c": 900,
+      "mcnemar_b": 671,
+      "mcnemar_c": 1299,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.48901004293562667,
-    "f1_macro_plus_z": 0.5357823311727001
+    "f1_macro_simple": 0.48764926792577273,
+    "f1_macro_plus_z": 0.5334336636750548,
+    "learned_logit_scale": 117.33076477050781,
+    "logit_scale_used": 117.33076477050781,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP2-ViT-B-16",
@@ -272,34 +307,39 @@
       "location",
       "liveness"
     ],
-    "simple_acc": 51.99301081140112,
-    "plus_z_acc": 61.21000051498413,
+    "simple_acc": 52.003307524618506,
+    "plus_z_acc": 61.234307289123535,
     "delta_p_stats": {
-      "baseline_acc": 51.99301081140112,
+      "baseline_acc": 52.003307524618506,
       "baseline_ci": [
-        50.96620072076008,
-        53.00890029485639
+        51.13884086296324,
+        52.853115838532666
       ],
-      "context_acc": 61.21000327618216,
+      "context_acc": 61.2343080508156,
       "context_ci": [
-        60.19438680790652,
-        62.214699137272035
+        60.43730737427647,
+        62.06870630684808
       ],
-      "delta_p": 9.216992464781036,
+      "delta_p": 9.231000526197093,
       "delta_p_ci": [
-        8.288740853991483,
-        10.145244075570602
+        8.464068255280768,
+        10.020296173795384
       ],
-      "delta_p_se": 0.4738809536691003,
-      "mcnemar_stat": 354.61526946107784,
+      "delta_p_se": 0.395790246915038,
+      "mcnemar_stat": 517.0085851648352,
       "mcnemar_p": 0.0,
       "significant": "True",
-      "mcnemar_b": 580,
-      "mcnemar_c": 1424,
+      "mcnemar_b": 842,
+      "mcnemar_c": 2070,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.5364910136118425,
-    "f1_macro_plus_z": 0.6051753311479756
+    "f1_macro_simple": 0.5378194642700072,
+    "f1_macro_plus_z": 0.6061537079714351,
+    "learned_logit_scale": 112.66889953613281,
+    "logit_scale_used": 112.66889953613281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP-ViT-B-16",
@@ -337,7 +377,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.8050761690927751,
-    "f1_macro_plus_z": 0.8380791678980068
+    "f1_macro_plus_z": 0.8380791678980068,
+    "learned_logit_scale": 117.33076477050781,
+    "logit_scale_used": 117.33076477050781,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP2-ViT-B-16",
@@ -375,7 +420,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.8033176231830492,
-    "f1_macro_plus_z": 0.836606221935142
+    "f1_macro_plus_z": 0.836606221935142,
+    "learned_logit_scale": 112.66889953613281,
+    "logit_scale_used": 112.66889953613281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP-ViT-B-16",
@@ -412,7 +462,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7521628502683947,
-    "f1_macro_plus_z": 0.7510244237518499
+    "f1_macro_plus_z": 0.7510244237518499,
+    "learned_logit_scale": 117.33076477050781,
+    "logit_scale_used": 117.33076477050781,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP2-ViT-B-16",
@@ -449,7 +504,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.775977649547069,
-    "f1_macro_plus_z": 0.7747511103424175
+    "f1_macro_plus_z": 0.7747511103424175,
+    "learned_logit_scale": 112.66889953613281,
+    "logit_scale_used": 112.66889953613281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP-ViT-B-16",
@@ -488,7 +548,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7043549803768758,
-    "f1_macro_plus_z": 0.7230557570075035
+    "f1_macro_plus_z": 0.7230557570075035,
+    "learned_logit_scale": 117.33076477050781,
+    "logit_scale_used": 117.33076477050781,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP2-ViT-B-16",
@@ -527,7 +592,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7510951133896573,
-    "f1_macro_plus_z": 0.7495885393853561
+    "f1_macro_plus_z": 0.7495885393853561,
+    "learned_logit_scale": 112.66889953613281,
+    "logit_scale_used": 112.66889953613281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP-ViT-B-16",
@@ -565,7 +635,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.9280700655768539,
-    "f1_macro_plus_z": 0.9404669902349962
+    "f1_macro_plus_z": 0.9404669902349962,
+    "learned_logit_scale": 117.33076477050781,
+    "logit_scale_used": 117.33076477050781,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP2-ViT-B-16",
@@ -603,7 +678,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.9483195294226736,
-    "f1_macro_plus_z": 0.9461316974403886
+    "f1_macro_plus_z": 0.9461316974403886,
+    "learned_logit_scale": 112.66889953613281,
+    "logit_scale_used": 112.66889953613281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP-ViT-B-16",
@@ -640,7 +720,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.5941841835499928,
-    "f1_macro_plus_z": 0.5905343535918215
+    "f1_macro_plus_z": 0.5905343535918215,
+    "learned_logit_scale": 117.33076477050781,
+    "logit_scale_used": 117.33076477050781,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "SigLIP2-ViT-B-16",
@@ -677,6 +762,11 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7012495133907652,
-    "f1_macro_plus_z": 0.7116396643695047
+    "f1_macro_plus_z": 0.7116396643695047,
+    "learned_logit_scale": 112.66889953613281,
+    "logit_scale_used": 112.66889953613281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   }
 ]

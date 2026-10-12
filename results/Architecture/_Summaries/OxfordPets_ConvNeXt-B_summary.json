@@ -7,12 +7,12 @@
     "pose",
     "interaction"
   ],
-  "simple_acc": 90.13355137639684,
+  "simple_acc": 90.1062959934587,
   "plus_z_acc": 92.06868410110474,
   "delta_p_stats": {
-    "baseline_acc": 90.13355137639684,
+    "baseline_acc": 90.1062959934587,
     "baseline_ci": [
-      89.20686835650041,
+      89.17961297356229,
       91.06023439629327
     ],
     "context_acc": 92.06868356500408,
@@ -20,19 +20,24 @@
       91.19651131098392,
       92.91360043608613
     ],
-    "delta_p": 1.9351321886072412,
+    "delta_p": 1.9623875715453778,
     "delta_p_ci": [
-      1.22649223221587,
-      2.643772144998635
+      1.2537476151539995,
+      2.6710275279367646
     ],
-    "delta_p_se": 0.36104827654963423,
-    "mcnemar_stat": 27.683615819209038,
-    "mcnemar_p": 1.4286763805326785e-07,
+    "delta_p_se": 0.36242265266885354,
+    "mcnemar_stat": 28.320224719101123,
+    "mcnemar_p": 1.0281614160057018e-07,
     "significant": "True",
     "mcnemar_b": 53,
-    "mcnemar_c": 124,
+    "mcnemar_c": 125,
     "alpha": 0.05
   },
-  "f1_macro_simple": 0.8890459294322799,
-  "f1_macro_plus_z": 0.9198036501117962
+  "f1_macro_simple": 0.88879233052982,
+  "f1_macro_plus_z": 0.9198036501117962,
+  "learned_logit_scale": 100.0,
+  "logit_scale_used": 100.0,
+  "common_logit_scale": null,
+  "temperature": 1.0,
+  "infer_mode": 0
 }

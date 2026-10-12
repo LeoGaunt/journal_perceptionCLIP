@@ -12,20 +12,20 @@
     "delta_p_stats": {
       "baseline_acc": 81.96410079392476,
       "baseline_ci": [
-        80.94580600621333,
-        82.96513634794616
+        80.99715222644114,
+        82.93104936140836
       ],
       "context_acc": 81.77424922333448,
       "context_ci": [
-        80.77321366931308,
-        82.77528477735588
+        80.7904729030031,
+        82.7925440110459
       ],
       "delta_p": -0.18985157059027813,
       "delta_p_ci": [
-        -0.7076285812909866,
-        0.36244390749050615
+        -0.7076285812909977,
+        0.34518467380048046
       ],
-      "delta_p_se": 0.2767461340710044,
+      "delta_p_se": 0.2749596903416859,
       "mcnemar_stat": 0.40160642570281124,
       "mcnemar_p": 0.5262607958267174,
       "significant": "False",
@@ -34,7 +34,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.807993268671171,
-    "f1_macro_plus_z": 0.8071630359181313
+    "f1_macro_plus_z": 0.8071630359181313,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-L-14",
@@ -49,20 +54,20 @@
     "delta_p_stats": {
       "baseline_acc": 75.52640662754574,
       "baseline_ci": [
-        74.4218156713842,
-        76.59691059716948
+        74.43907490507421,
+        76.61373835001726
       ],
       "context_acc": 75.2847773558854,
       "context_ci": [
         74.16292716603382,
-        76.35528132550914
+        76.423886779427
       ],
       "delta_p": -0.24162927166034365,
       "delta_p_ci": [
-        -0.8629616845012067,
-        0.4142216085605832
+        -0.8974801518812581,
+        0.3969623748705575
       ],
-      "delta_p_se": 0.3288525400020101,
+      "delta_p_se": 0.33439912688768736,
       "mcnemar_stat": 0.46685082872928174,
       "mcnemar_p": 0.49443951318217394,
       "significant": "False",
@@ -71,7 +76,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7432686196939906,
-    "f1_macro_plus_z": 0.7396285551417775
+    "f1_macro_plus_z": 0.7396285551417775,
+    "learned_logit_scale": 99.99800109863281,
+    "logit_scale_used": 99.99800109863281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-H-14",
@@ -110,7 +120,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.9961021846023432,
-    "f1_macro_plus_z": 0.9893078446419208
+    "f1_macro_plus_z": 0.9893078446419208,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-L-14",
@@ -149,7 +164,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.9945440538325779,
-    "f1_macro_plus_z": 0.9866896522941867
+    "f1_macro_plus_z": 0.9866896522941867,
+    "learned_logit_scale": 99.99800109863281,
+    "logit_scale_used": 99.99800109863281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-H-14",
@@ -185,7 +205,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.6043067511069383,
-    "f1_macro_plus_z": 0.7177966372202182
+    "f1_macro_plus_z": 0.7177966372202182,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-L-14",
@@ -221,7 +246,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.481347806722523,
-    "f1_macro_plus_z": 0.628590268100668
+    "f1_macro_plus_z": 0.628590268100668,
+    "learned_logit_scale": 99.99800109863281,
+    "logit_scale_used": 99.99800109863281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-H-14",
@@ -233,34 +263,39 @@
       "location",
       "liveness"
     ],
-    "simple_acc": 39.39063011903462,
-    "plus_z_acc": 49.08812940120697,
+    "simple_acc": 39.36706006164023,
+    "plus_z_acc": 49.00398552417755,
     "delta_p_stats": {
-      "baseline_acc": 39.39063011903462,
+      "baseline_acc": 39.36706006164023,
       "baseline_ci": [
-        38.363820028393576,
-        40.37348476575298
+        38.54732015334887,
+        40.2164925204841
       ],
-      "context_acc": 49.08812929998908,
+      "context_acc": 49.00398406374502,
       "context_ci": [
-        48.06131920934804,
-        50.11493939063012
+        48.132000300684055,
+        49.838382319777494
       ],
-      "delta_p": 9.697499180954459,
+      "delta_p": 9.636924002104791,
       "delta_p_ci": [
-        8.802009391722182,
-        10.604182592552142
+        8.847628354506504,
+        10.388822070209725
       ],
-      "delta_p_se": 0.4575333981196774,
-      "mcnemar_stat": 411.92094240837696,
+      "delta_p_se": 0.3906163026751891,
+      "mcnemar_stat": 584.3878205128206,
       "mcnemar_p": 0.0,
       "significant": "True",
-      "mcnemar_b": 511,
-      "mcnemar_c": 1399,
+      "mcnemar_b": 763,
+      "mcnemar_c": 2045,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.38576539709489055,
-    "f1_macro_plus_z": 0.44927202058210347
+    "f1_macro_simple": 0.38601415982666554,
+    "f1_macro_plus_z": 0.44870843127357724,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-L-14",
@@ -272,34 +307,39 @@
       "location",
       "liveness"
     ],
-    "simple_acc": 31.615157802773837,
-    "plus_z_acc": 34.050452709198,
+    "simple_acc": 31.436518078628882,
+    "plus_z_acc": 33.9397132396698,
     "delta_p_stats": {
-      "baseline_acc": 31.615157802773837,
+      "baseline_acc": 31.436518078628882,
       "baseline_ci": [
-        30.69728076881075,
-        32.56525062793491
+        30.639517402089755,
+        32.233518755168014
       ],
-      "context_acc": 34.05045320519821,
+      "context_acc": 33.9397128467263,
       "context_ci": [
-        33.07824615048597,
-        34.98962542317353
+        33.172780575809966,
+        34.72919642185973
       ],
-      "delta_p": 2.435295402424373,
+      "delta_p": 2.503194768097419,
       "delta_p_ci": [
-        1.7142623129846022,
-        3.17789669105602
+        1.9318950612643768,
+        3.1346312861760484
       ],
-      "delta_p_se": 0.38172921543926175,
-      "mcnemar_stat": 38.89818468823994,
-      "mcnemar_p": 4.4649561825593764E-10,
+      "delta_p_se": 0.3153975111151527,
+      "mcnemar_stat": 60.9983397897067,
+      "mcnemar_p": 5.662137425588298E-15,
       "significant": "True",
-      "mcnemar_b": 522,
-      "mcnemar_c": 745,
+      "mcnemar_b": 737,
+      "mcnemar_c": 1070,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.30140413500420044,
-    "f1_macro_plus_z": 0.3245988396946075
+    "f1_macro_simple": 0.30069500955052003,
+    "f1_macro_plus_z": 0.32379693687765937,
+    "learned_logit_scale": 99.99800109863281,
+    "logit_scale_used": 99.99800109863281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-H-14",
@@ -337,7 +377,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7456826020177605,
-    "f1_macro_plus_z": 0.7604441619140708
+    "f1_macro_plus_z": 0.7604441619140708,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-L-14",
@@ -348,34 +393,39 @@
       "petals",
       "quality"
     ],
-    "simple_acc": 75.58952675231745,
+    "simple_acc": 75.57326394535697,
     "plus_z_acc": 76.69540047645569,
     "delta_p_stats": {
-      "baseline_acc": 75.58952675231745,
+      "baseline_acc": 75.57326394535697,
       "baseline_ci": [
-        74.49951211579119,
-        76.5982273540413
+        74.46739307204423,
+        76.59782078386729
       ],
       "context_acc": 76.69539762563018,
       "context_ci": [
         75.65457798015937,
         77.78541226215644
       ],
-      "delta_p": 1.1058708733127247,
+      "delta_p": 1.1221336802732083,
       "delta_p_ci": [
-        0.6179866644982934,
-        1.6262806960481326
+        0.6342494714587699,
+        1.64254350300862
       ],
-      "delta_p_se": 0.25795467262013394,
-      "mcnemar_stat": 18.397540983606557,
-      "mcnemar_p": 0.000017928920661769432,
+      "delta_p_se": 0.25722120301496904,
+      "mcnemar_stat": 19.02880658436214,
+      "mcnemar_p": 0.000012875988208649325,
       "significant": "True",
-      "mcnemar_b": 88,
+      "mcnemar_b": 87,
       "mcnemar_c": 156,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.6905201956118173,
-    "f1_macro_plus_z": 0.7058470377782945
+    "f1_macro_simple": 0.6904102893683929,
+    "f1_macro_plus_z": 0.7058470377782945,
+    "learned_logit_scale": 99.99800109863281,
+    "logit_scale_used": 99.99800109863281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-H-14",
@@ -412,7 +462,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7638081009275306,
-    "f1_macro_plus_z": 0.7669016312004796
+    "f1_macro_plus_z": 0.7669016312004796,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-L-14",
@@ -449,7 +504,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7416294177557282,
-    "f1_macro_plus_z": 0.739600782492299
+    "f1_macro_plus_z": 0.739600782492299,
+    "learned_logit_scale": 99.99800109863281,
+    "logit_scale_used": 99.99800109863281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-H-14",
@@ -488,7 +548,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7185612661419551,
-    "f1_macro_plus_z": 0.7380142556966326
+    "f1_macro_plus_z": 0.7380142556966326,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-L-14",
@@ -527,7 +592,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.6899244877470757,
-    "f1_macro_plus_z": 0.7077712262293957
+    "f1_macro_plus_z": 0.7077712262293957,
+    "learned_logit_scale": 99.99800109863281,
+    "logit_scale_used": 99.99800109863281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-H-14",
@@ -565,7 +635,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.9053417893749035,
-    "f1_macro_plus_z": 0.9416890082600736
+    "f1_macro_plus_z": 0.9416890082600736,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-L-14",
@@ -603,7 +678,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.9010096387134947,
-    "f1_macro_plus_z": 0.9348447998199735
+    "f1_macro_plus_z": 0.9348447998199735,
+    "learned_logit_scale": 99.99800109863281,
+    "logit_scale_used": 99.99800109863281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-H-14",
@@ -640,7 +720,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7744747962112897,
-    "f1_macro_plus_z": 0.7772966647725835
+    "f1_macro_plus_z": 0.7772966647725835,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "OpenCLIP-ViT-L-14",
@@ -677,6 +762,11 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.70352792287421,
-    "f1_macro_plus_z": 0.7427729306177782
+    "f1_macro_plus_z": 0.7427729306177782,
+    "learned_logit_scale": 99.99800109863281,
+    "logit_scale_used": 99.99800109863281,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   }
 ]

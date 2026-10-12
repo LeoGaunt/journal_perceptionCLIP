@@ -7,32 +7,37 @@
     "petals",
     "quality"
   ],
-  "simple_acc": 69.53976256301839,
+  "simple_acc": 69.57228817693934,
   "plus_z_acc": 69.97885704040527,
   "delta_p_stats": {
-    "baseline_acc": 69.53976256301839,
+    "baseline_acc": 69.57228817693934,
     "baseline_ci": [
-      68.3851032688242,
-      70.61310782241014
+      68.41762888274516,
+      70.6618962432916
     ],
     "context_acc": 69.97885835095138,
     "context_ci": [
       68.75914782891527,
       71.21483167994795
     ],
-    "delta_p": 0.43909578793299886,
+    "delta_p": 0.406570174012046,
     "delta_p_ci": [
-      -0.17889087656529634,
-      1.0245568385103265
+      -0.21141649048626032,
+      1.008294031549839
     ],
-    "delta_p_se": 0.3180738400415882,
-    "mcnemar_stat": 1.8026666666666666,
-    "mcnemar_p": 0.17939044192314102,
+    "delta_p_se": 0.3192830535244187,
+    "mcnemar_stat": 1.5278514588859415,
+    "mcnemar_p": 0.21643518906311943,
     "significant": "False",
-    "mcnemar_b": 174,
+    "mcnemar_b": 176,
     "mcnemar_c": 201,
     "alpha": 0.05
   },
-  "f1_macro_simple": 0.6289007074883951,
-  "f1_macro_plus_z": 0.6420422288619042
+  "f1_macro_simple": 0.6290356864248295,
+  "f1_macro_plus_z": 0.6420422288619042,
+  "learned_logit_scale": 100.0,
+  "logit_scale_used": 100.0,
+  "common_logit_scale": null,
+  "temperature": 1.0,
+  "infer_mode": 0
 }

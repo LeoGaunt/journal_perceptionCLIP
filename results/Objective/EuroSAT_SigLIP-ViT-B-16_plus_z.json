@@ -81153,5 +81153,10 @@
     "river",
     "lake or sea"
   ],
-  "condition": "+Z"
+  "condition": "+Z",
+  "learned_logit_scale": 117.33076477050781,
+  "logit_scale_used": 117.33076477050781,
+  "common_logit_scale": null,
+  "temperature": 1.0,
+  "infer_mode": 0
 }

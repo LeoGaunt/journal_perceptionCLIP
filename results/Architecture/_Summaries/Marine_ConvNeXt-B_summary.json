@@ -9,31 +9,36 @@
     "state"
   ],
   "simple_acc": 69.88549339946029,
-  "plus_z_acc": 70.93574404716492,
+  "plus_z_acc": 70.91386318206787,
   "delta_p_stats": {
     "baseline_acc": 69.88549339946029,
     "baseline_ci": [
       69.14867624535044,
       70.63671504631318
     ],
-    "context_acc": 70.93574502224492,
+    "context_acc": 70.91386478010357,
     "context_ci": [
-      70.16264313325068,
-      71.70884691123915
+      70.1261760630151,
+      71.68696666909781
     ],
-    "delta_p": 1.0502516227846286,
+    "delta_p": 1.0283713806432786,
     "delta_p_ci": [
-      0.6124644446065153,
-      1.4659762234702112
+      0.5905842024651784,
+      1.4440959813288634
     ],
-    "delta_p_se": 0.22274589326697442,
-    "mcnemar_stat": 22.035560344827587,
-    "mcnemar_p": 2.6764556655400895e-06,
+    "delta_p_se": 0.22226176321128474,
+    "mcnemar_stat": 21.18918918918919,
+    "mcnemar_p": 4.1610501283484425e-06,
     "significant": "True",
     "mcnemar_b": 392,
-    "mcnemar_c": 536,
+    "mcnemar_c": 533,
     "alpha": 0.05
   },
   "f1_macro_simple": 0.6521593920206926,
-  "f1_macro_plus_z": 0.6634824837200274
+  "f1_macro_plus_z": 0.6632814090891257,
+  "learned_logit_scale": 100.0,
+  "logit_scale_used": 100.0,
+  "common_logit_scale": null,
+  "temperature": 1.0,
+  "infer_mode": 0
 }
