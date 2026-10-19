@@ -66,7 +66,7 @@ _OPENCLIP_REGISTRY = {
 
     # ── Data group (ViT-B-16 architecture) ──────────────────────────────────
     # OpenCLIP-ViT-B-16 (above) is the LAION-2B baseline
-    "MetaCLIP-ViT-B-16":  ("ViT-B-16", "metaclip_400m"),          # MetaCLIP-400M
+    "MetaCLIP-ViT-B-16":  ("ViT-B-16-quickgelu", "metaclip_400m"),          # MetaCLIP-400M
     "DataComp-ViT-B-16":  ("ViT-B-16", "datacomp_xl_s13b_b90k"),  # DataComp-XL
 
     # ── Legacy / unused (kept for backward compatibility) ────────────────────

@@ -24,29 +24,4 @@ class Marine:
                                       num_workers=num_workers)
 
 
-        self.classnames = [
-            "clam",
-            "coral",
-            "crab",
-            "dolphin",
-            "eel",
-            "fish",
-            "jellyfish",
-            "lobster",
-            "nudibranch",
-            "octopus",
-            "otter",
-            "penguin",
-            "puffer fish",
-            "seahorse",
-            "seal",
-            "sea urchin",
-            "shark",
-            "shrimp",
-            "squid",
-            "starfish",
-            "stingray",
-            "turtle",
-            "whale",
-        ]
-        
+        self.classnames = self.test_dataset.classes

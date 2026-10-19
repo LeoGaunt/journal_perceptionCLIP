@@ -5,32 +5,37 @@
     "condition",
     "source"
   ],
-  "simple_acc": 49.63703703703703,
+  "simple_acc": 49.64074074074074,
   "plus_z_acc": 51.47036910057068,
   "delta_p_stats": {
-    "baseline_acc": 49.63703703703703,
+    "baseline_acc": 49.64074074074074,
     "baseline_ci": [
-      49.04805555555555,
-      50.23342592592592
+      49.048148148148144,
+      50.237037037037034
     ],
     "context_acc": 51.47037037037037,
     "context_ci": [
       50.86287037037037,
       52.1074074074074
     ],
-    "delta_p": 1.8333333333333357,
+    "delta_p": 1.829629629629629,
     "delta_p_ci": [
-      1.2110185185185256,
-      2.4446296296296333
+      1.2037037037037068,
+      2.4408333333333356
     ],
-    "delta_p_se": 0.3203878787320059,
-    "mcnemar_stat": 33.57215572981153,
-    "mcnemar_p": 6.866871848920653e-09,
+    "delta_p_se": 0.3203413492955568,
+    "mcnemar_stat": 33.44097413318657,
+    "mcnemar_p": 7.3459899274652685e-09,
     "significant": "True",
     "mcnemar_b": 3387,
-    "mcnemar_c": 3882,
+    "mcnemar_c": 3881,
     "alpha": 0.05
   },
-  "f1_macro_simple": 0.4451629386033279,
-  "f1_macro_plus_z": 0.49555794533859343
+  "f1_macro_simple": 0.44520269841397686,
+  "f1_macro_plus_z": 0.49555794533859343,
+  "learned_logit_scale": 100.0,
+  "logit_scale_used": 100.0,
+  "common_logit_scale": null,
+  "temperature": 1.0,
+  "infer_mode": 0
 }

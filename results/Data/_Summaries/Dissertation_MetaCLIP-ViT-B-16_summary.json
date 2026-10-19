@@ -8,32 +8,37 @@
     "weather",
     "decker"
   ],
-  "simple_acc": 99.14379249559305,
+  "simple_acc": 99.39561823218332,
   "plus_z_acc": 99.21934008598328,
   "delta_p_stats": {
-    "baseline_acc": 99.14379249559305,
+    "baseline_acc": 99.39561823218332,
     "baseline_ci": [
-      98.84160161168471,
-      99.42080080584236
+      99.14379249559305,
+      99.62226139511458
     ],
     "context_acc": 99.21934021657013,
     "context_ci": [
       98.94233190632082,
-      99.49634852681945
+      99.47116595316041
     ],
-    "delta_p": 0.07554772097708451,
+    "delta_p": -0.17627801561319245,
     "delta_p_ci": [
-      -0.176278015613196,
-      0.352556031226392
+      -0.45328632586250084,
+      0.12591286829513076
     ],
-    "delta_p_se": 0.13747723811507867,
-    "mcnemar_stat": 0.12903225806451613,
-    "mcnemar_p": 0.7194375444233914,
+    "delta_p_se": 0.14783387996507238,
+    "mcnemar_stat": 1.0285714285714285,
+    "mcnemar_p": 0.3104944343172348,
     "significant": "False",
-    "mcnemar_b": 14,
-    "mcnemar_c": 17,
+    "mcnemar_b": 21,
+    "mcnemar_c": 14,
     "alpha": 0.05
   },
-  "f1_macro_simple": 0.9911800519996341,
-  "f1_macro_plus_z": 0.9919355985142493
+  "f1_macro_simple": 0.9937685855740637,
+  "f1_macro_plus_z": 0.9919249783448832,
+  "learned_logit_scale": 100.0,
+  "logit_scale_used": 100.0,
+  "common_logit_scale": null,
+  "temperature": 1.0,
+  "infer_mode": 0
 }

@@ -12,20 +12,20 @@
     "delta_p_stats": {
       "baseline_acc": 78.46047635484985,
       "baseline_ci": [
-        77.3558853986883,
-        79.44425267518123
+        77.37271315153608,
+        79.4960303762513
       ],
       "context_acc": 78.11529168104936,
       "context_ci": [
         77.0797376596479,
-        79.20262340352089
+        79.18536416983086
       ],
       "delta_p": -0.3451846738004889,
       "delta_p_ci": [
         -0.8802209181912324,
-        0.18985157059026037
+        0.18985157059027147
       ],
-      "delta_p_se": 0.27627069004984434,
+      "delta_p_se": 0.2796546934919205,
       "mcnemar_stat": 1.3884615384615384,
       "mcnemar_p": 0.23866508081821713,
       "significant": "False",
@@ -34,7 +34,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7700207369525717,
-    "f1_macro_plus_z": 0.7692282208705457
+    "f1_macro_plus_z": 0.7692282208705457,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "MetaCLIP-ViT-B-16",
@@ -44,34 +49,39 @@
       "background",
       "condition"
     ],
-    "simple_acc": 65.51605108733172,
-    "plus_z_acc": 64.89471793174744,
+    "simple_acc": 69.74456334138765,
+    "plus_z_acc": 70.50396800041199,
     "delta_p_stats": {
-      "baseline_acc": 65.51605108733172,
+      "baseline_acc": 69.74456334138765,
       "baseline_ci": [
-        64.30747324818778,
-        66.74188816016569
+        68.60545391784605,
+        70.91819123230928
       ],
-      "context_acc": 64.89471867449085,
+      "context_acc": 70.5039696237487,
       "context_ci": [
-        63.65205384880911,
-        66.08603727994478
+        69.29582326544701,
+        71.66033828098033
       ],
-      "delta_p": -0.6213324128408715,
+      "delta_p": 0.7594062823610557,
       "delta_p_ci": [
-        -1.4152571625819843,
-        0.1553331032102201
+        0.15533310321021981,
+        1.3634794615119072
       ],
-      "delta_p_se": 0.39930663063200156,
-      "mcnemar_stat": 2.2685185185185186,
-      "mcnemar_p": 0.13202605624954722,
-      "significant": "False",
-      "mcnemar_b": 288,
-      "mcnemar_c": 252,
+      "delta_p_se": 0.3099514538078161,
+      "mcnemar_stat": 5.470414201183432,
+      "mcnemar_p": 0.019341041195471975,
+      "significant": "True",
+      "mcnemar_b": 147,
+      "mcnemar_c": 191,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.626664710892162,
-    "f1_macro_plus_z": 0.6193000303772165
+    "f1_macro_simple": 0.6752481286634372,
+    "f1_macro_plus_z": 0.6846976581513868,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "DataComp-ViT-B-16",
@@ -110,7 +120,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.9935060071478077,
-    "f1_macro_plus_z": 0.9872190960219445
+    "f1_macro_plus_z": 0.9872190960219445,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "MetaCLIP-ViT-B-16",
@@ -122,34 +137,39 @@
       "weather",
       "decker"
     ],
-    "simple_acc": 99.14379249559305,
+    "simple_acc": 99.39561823218332,
     "plus_z_acc": 99.21934008598328,
     "delta_p_stats": {
-      "baseline_acc": 99.14379249559305,
+      "baseline_acc": 99.39561823218332,
       "baseline_ci": [
-        98.84160161168471,
-        99.42080080584236
+        99.14379249559305,
+        99.62226139511458
       ],
       "context_acc": 99.21934021657013,
       "context_ci": [
         98.94233190632082,
-        99.49634852681945
+        99.47116595316041
       ],
-      "delta_p": 0.07554772097708451,
+      "delta_p": -0.17627801561319245,
       "delta_p_ci": [
-        -0.176278015613196,
-        0.352556031226392
+        -0.45328632586250084,
+        0.12591286829513076
       ],
-      "delta_p_se": 0.13747723811507867,
-      "mcnemar_stat": 0.12903225806451613,
-      "mcnemar_p": 0.7194375444233914,
+      "delta_p_se": 0.14783387996507238,
+      "mcnemar_stat": 1.0285714285714285,
+      "mcnemar_p": 0.3104944343172348,
       "significant": "False",
-      "mcnemar_b": 14,
-      "mcnemar_c": 17,
+      "mcnemar_b": 21,
+      "mcnemar_c": 14,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.9911800519996341,
-    "f1_macro_plus_z": 0.9919355985142493
+    "f1_macro_simple": 0.9937685855740637,
+    "f1_macro_plus_z": 0.9919249783448832,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "DataComp-ViT-B-16",
@@ -185,7 +205,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.4115266456656201,
-    "f1_macro_plus_z": 0.5395459681647159
+    "f1_macro_plus_z": 0.5395459681647159,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "MetaCLIP-ViT-B-16",
@@ -194,34 +219,39 @@
       "condition",
       "source"
     ],
-    "simple_acc": 40.3962962962963,
-    "plus_z_acc": 45.05926072597504,
+    "simple_acc": 56.29259259259259,
+    "plus_z_acc": 55.218517780303955,
     "delta_p_stats": {
-      "baseline_acc": 40.3962962962963,
+      "baseline_acc": 56.29259259259259,
       "baseline_ci": [
-        39.818518518518516,
-        40.977870370370375
+        55.7037037037037,
+        56.877870370370374
       ],
-      "context_acc": 45.05925925925926,
+      "context_acc": 55.21851851851852,
       "context_ci": [
-        44.477777777777774,
-        45.681481481481484
+        54.62953703703703,
+        55.811203703703704
       ],
-      "delta_p": 4.662962962962958,
+      "delta_p": -1.074074074074069,
       "delta_p_ci": [
-        4.0295370370370405,
-        5.296388888888892
+        -1.6407407407407426,
+        -0.49620370370370254
       ],
-      "delta_p_se": 0.3206216973249313,
-      "mcnemar_stat": 226.9559730388642,
-      "mcnemar_p": 0.0,
+      "delta_p_se": 0.2913171648989484,
+      "mcnemar_stat": 13.624959216965742,
+      "mcnemar_p": 0.0002231983328263576,
       "significant": "True",
-      "mcnemar_b": 2857,
-      "mcnemar_c": 4116,
+      "mcnemar_b": 3210,
+      "mcnemar_c": 2920,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.3692486737471933,
-    "f1_macro_plus_z": 0.4113332935976587
+    "f1_macro_simple": 0.5525058308269492,
+    "f1_macro_plus_z": 0.5269026652987465,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "DataComp-ViT-B-16",
@@ -233,34 +263,39 @@
       "location",
       "liveness"
     ],
-    "simple_acc": 40.7993884459976,
-    "plus_z_acc": 44.0209686756134,
+    "simple_acc": 40.66751860482598,
+    "plus_z_acc": 43.96752715110779,
     "delta_p_stats": {
-      "baseline_acc": 40.7993884459976,
+      "baseline_acc": 40.66751860482598,
       "baseline_ci": [
-        39.76193076335044,
-        41.76040187834444
+        39.8481545516049,
+        41.48688265804706
       ],
-      "context_acc": 44.02096756579666,
+      "context_acc": 43.967526121927385,
       "context_ci": [
-        43.0269192967129,
-        45.04750464125805
+        43.13293993835977,
+        44.83199278358265
       ],
-      "delta_p": 3.2215791197990598,
+      "delta_p": 3.300007517101406,
       "delta_p_ci": [
-        2.4677842088020125,
-        3.9641804084307064
+        2.706156506051266,
+        3.9164098323686334
       ],
-      "delta_p_se": 0.3792498722857649,
-      "mcnemar_stat": 72.33138075313808,
+      "delta_p_se": 0.3142593414761118,
+      "mcnemar_stat": 109.93925501432665,
       "mcnemar_p": 0.0,
       "significant": "True",
-      "mcnemar_b": 450,
-      "mcnemar_c": 745,
+      "mcnemar_b": 653,
+      "mcnemar_c": 1092,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.40046403087550764,
-    "f1_macro_plus_z": 0.43183002601864157
+    "f1_macro_simple": 0.39996686938197934,
+    "f1_macro_plus_z": 0.4322401915244972,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "MetaCLIP-ViT-B-16",
@@ -272,34 +307,39 @@
       "location",
       "liveness"
     ],
-    "simple_acc": 32.598012449492195,
-    "plus_z_acc": 34.4872772693634,
+    "simple_acc": 35.157483274449376,
+    "plus_z_acc": 36.472976207733154,
     "delta_p_stats": {
-      "baseline_acc": 32.598012449492195,
+      "baseline_acc": 35.157483274449376,
       "baseline_ci": [
-        31.571475374030793,
-        33.548105274653274
+        34.3381192212283,
+        35.961813124859056
       ],
-      "context_acc": 34.487277492628586,
+      "context_acc": 36.47297602044652,
       "context_ci": [
-        33.493502238724474,
-        35.426449710603904
+        35.65361196722544,
+        37.29985717507329
       ],
-      "delta_p": 1.8892650431363904,
+      "delta_p": 1.3154927459971404,
       "delta_p_ci": [
-        1.1682319536966221,
-        2.6537075461395663
+        0.7141246335413076,
+        1.9243779598586752
       ],
-      "delta_p_se": 0.3811374141666064,
-      "mcnemar_stat": 25.007607776838547,
-      "mcnemar_p": 5.710454863416814E-7,
+      "delta_p_se": 0.309867826673537,
+      "mcnemar_stat": 17.056901408450702,
+      "mcnemar_p": 0.000036276296530690644,
       "significant": "True",
-      "mcnemar_b": 505,
-      "mcnemar_c": 678,
+      "mcnemar_b": 800,
+      "mcnemar_c": 975,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.29824859255651825,
-    "f1_macro_plus_z": 0.3154487571114323
+    "f1_macro_simple": 0.34237820705082705,
+    "f1_macro_plus_z": 0.34377405045511733,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "DataComp-ViT-B-16",
@@ -337,7 +377,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7196682099276802,
-    "f1_macro_plus_z": 0.7363397552908555
+    "f1_macro_plus_z": 0.7363397552908555,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "MetaCLIP-ViT-B-16",
@@ -348,34 +393,39 @@
       "petals",
       "quality"
     ],
-    "simple_acc": 68.85672467067816,
-    "plus_z_acc": 71.44250869750977,
+    "simple_acc": 71.19856887298748,
+    "plus_z_acc": 73.58919978141785,
     "delta_p_stats": {
-      "baseline_acc": 68.85672467067816,
+      "baseline_acc": 71.19856887298748,
       "baseline_ci": [
-        67.71832818344447,
-        69.97885835095138
+        70.05976581557978,
+        72.3044397463002
       ],
-      "context_acc": 71.4425109773947,
+      "context_acc": 73.58920149617823,
       "context_ci": [
-        70.32037729712148,
-        72.5813140348024
+        72.54797528053342,
+        74.77638640429338
       ],
-      "delta_p": 2.5857863067165425,
+      "delta_p": 2.390632623190754,
       "delta_p_ci": [
-        2.000325256139212,
-        3.252561392096276
+        1.7889087656529523,
+        3.0411449016100156
       ],
-      "delta_p_se": 0.32466994236262947,
-      "mcnemar_stat": 59.016548463356976,
-      "mcnemar_p": 1.5654144647214707E-14,
+      "delta_p_se": 0.32745700964249214,
+      "mcnemar_stat": 51.86374695863747,
+      "mcnemar_p": 5.948574965941589E-13,
       "significant": "True",
       "mcnemar_b": 132,
-      "mcnemar_c": 291,
+      "mcnemar_c": 279,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.5933120247572825,
-    "f1_macro_plus_z": 0.6156677443301166
+    "f1_macro_simple": 0.6397625987563194,
+    "f1_macro_plus_z": 0.6703003267111759,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "DataComp-ViT-B-16",
@@ -412,7 +462,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.7266705942605757,
-    "f1_macro_plus_z": 0.7260924665376614
+    "f1_macro_plus_z": 0.7260924665376614,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "MetaCLIP-ViT-B-16",
@@ -422,34 +477,39 @@
       "quality",
       "condition"
     ],
-    "simple_acc": 65.96,
-    "plus_z_acc": 66.40599966049194,
+    "simple_acc": 69.974,
+    "plus_z_acc": 70.1479971408844,
     "delta_p_stats": {
-      "baseline_acc": 65.96,
+      "baseline_acc": 69.974,
       "baseline_ci": [
-        65.54995,
-        66.38
+        69.56994999999999,
+        70.36815
       ],
-      "context_acc": 66.40599999999999,
+      "context_acc": 70.148,
       "context_ci": [
-        65.99199999999999,
-        66.80199999999999
+        69.734,
+        70.5361
       ],
-      "delta_p": 0.44599999999999795,
+      "delta_p": 0.17399999999999238,
       "delta_p_ci": [
-        0.21390000000000298,
-        0.6759999999999988
+        -0.054049999999998266,
+        0.40000000000000036
       ],
-      "delta_p_se": 0.11955066367273884,
-      "mcnemar_stat": 13.79345088161209,
-      "mcnemar_p": 0.00020404627225312222,
-      "significant": "True",
-      "mcnemar_b": 1675,
-      "mcnemar_c": 1898,
+      "delta_p_se": 0.11538581463555016,
+      "mcnemar_stat": 2.248707813925205,
+      "mcnemar_p": 0.13372602850894122,
+      "significant": "False",
+      "mcnemar_b": 1601,
+      "mcnemar_c": 1688,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.6541757931129093,
-    "f1_macro_plus_z": 0.6561888822115907
+    "f1_macro_simple": 0.6956992038132116,
+    "f1_macro_plus_z": 0.6965725616008264,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "DataComp-ViT-B-16",
@@ -461,34 +521,39 @@
       "location",
       "state"
     ],
-    "simple_acc": 73.36445189993435,
-    "plus_z_acc": 76.03384256362915,
+    "simple_acc": 83.43665669900079,
+    "plus_z_acc": 85.98206043243408,
     "delta_p_stats": {
-      "baseline_acc": 73.36445189993435,
+      "baseline_acc": 83.43665669900079,
       "baseline_ci": [
-        72.64969732331704,
-        74.0937933046459
+        82.81653416964481,
+        84.05659689300562
       ],
-      "context_acc": 76.03384144117862,
+      "context_acc": 85.9820582014441,
       "context_ci": [
-        75.311611115163,
-        76.74130260374882
+        85.37670483553352,
+        86.54365108307198
       ],
-      "delta_p": 2.6693895412442714,
+      "delta_p": 2.545401502443312,
       "delta_p_ci": [
-        2.253482605207497,
-        3.0705273138356026
+        2.1077966596163678,
+        2.961126103128875
       ],
-      "delta_p_se": 0.21311030621326735,
-      "mcnemar_stat": 153.83949191685912,
+      "delta_p_se": 0.21906829666978186,
+      "mcnemar_stat": 132.9352360043908,
       "mcnemar_p": 0.0,
       "significant": "True",
-      "mcnemar_b": 250,
-      "mcnemar_c": 616,
+      "mcnemar_b": 281,
+      "mcnemar_c": 630,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.6836465459826931,
-    "f1_macro_plus_z": 0.7219478702483567
+    "f1_macro_simple": 0.8027864519480872,
+    "f1_macro_plus_z": 0.842247932391988,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "MetaCLIP-ViT-B-16",
@@ -500,34 +565,39 @@
       "location",
       "state"
     ],
-    "simple_acc": 70.7461162570199,
-    "plus_z_acc": 73.20399880409241,
+    "simple_acc": 82.64167456786522,
+    "plus_z_acc": 84.91721749305725,
     "delta_p_stats": {
-      "baseline_acc": 70.7461162570199,
+      "baseline_acc": 82.64167456786522,
       "baseline_ci": [
-        69.99489461016702,
-        71.49004448982569
+        82.0217343738604,
+        83.26909051126833
       ],
-      "context_acc": 73.20399679089782,
+      "context_acc": 84.91721975056524,
       "context_ci": [
-        72.44548172999781,
-        73.94081394500766
+        84.29709722120924,
+        85.50069287433448
       ],
-      "delta_p": 2.457880533877912,
+      "delta_p": 2.2755451827000144,
       "delta_p_ci": [
-        2.0638538399824946,
-        2.851724892422147
+        1.8815184888046075,
+        2.676865290642553
       ],
-      "delta_p_se": 0.19831974483161222,
-      "mcnemar_stat": 148.74308300395256,
+      "delta_p_se": 0.20505434623365723,
+      "mcnemar_stat": 118.53063725490196,
       "mcnemar_p": 0.0,
       "significant": "True",
-      "mcnemar_b": 211,
-      "mcnemar_c": 548,
+      "mcnemar_b": 252,
+      "mcnemar_c": 564,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.6568602542234939,
-    "f1_macro_plus_z": 0.6858713441723754
+    "f1_macro_simple": 0.7992209233408615,
+    "f1_macro_plus_z": 0.8290009954658669,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "DataComp-ViT-B-16",
@@ -565,7 +635,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.8940210072292946,
-    "f1_macro_plus_z": 0.9225416811202165
+    "f1_macro_plus_z": 0.9225416811202165,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "MetaCLIP-ViT-B-16",
@@ -576,34 +651,39 @@
       "pose",
       "interaction"
     ],
-    "simple_acc": 87.35350231670755,
-    "plus_z_acc": 88.22567462921143,
+    "simple_acc": 88.52548378304715,
+    "plus_z_acc": 90.3243362903595,
     "delta_p_stats": {
-      "baseline_acc": 87.35350231670755,
+      "baseline_acc": 88.52548378304715,
       "baseline_ci": [
-        86.20877623330607,
-        88.3892068683565
+        87.4897792313982,
+        89.5073589533933
       ],
-      "context_acc": 88.22567457072772,
+      "context_acc": 90.32433905696375,
       "context_ci": [
-        87.13477786862906,
-        89.31588988825293
+        89.2886345053148,
+        91.2782774597983
       ],
-      "delta_p": 0.8721722540201711,
+      "delta_p": 1.798855273916601,
       "delta_p_ci": [
-        -0.054510765876258915,
-        1.8261106568547292
+        0.9811937857726938,
+        2.6165167620605057
       ],
-      "delta_p_se": 0.4758483469432658,
-      "mcnemar_stat": 3.1201298701298703,
-      "mcnemar_p": 0.0773306201539049,
-      "significant": "False",
-      "mcnemar_b": 138,
-      "mcnemar_c": 170,
+      "delta_p_se": 0.41409759699616,
+      "mcnemar_stat": 17.17479674796748,
+      "mcnemar_p": 0.000034092968736132434,
+      "significant": "True",
+      "mcnemar_b": 90,
+      "mcnemar_c": 156,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.865750265387226,
-    "f1_macro_plus_z": 0.8773974016418712
+    "f1_macro_simple": 0.8766229060131312,
+    "f1_macro_plus_z": 0.9014667604873747,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "DataComp-ViT-B-16",
@@ -640,7 +720,12 @@
       "alpha": 0.05
     },
     "f1_macro_simple": 0.6670759885413053,
-    "f1_macro_plus_z": 0.7141785409774863
+    "f1_macro_plus_z": 0.7141785409774863,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   },
   {
     "model": "MetaCLIP-ViT-B-16",
@@ -650,33 +735,38 @@
       "source",
       "land"
     ],
-    "simple_acc": 62.28571428571429,
-    "plus_z_acc": 59.952378273010254,
+    "simple_acc": 68.57142857142857,
+    "plus_z_acc": 68.57143044471741,
     "delta_p_stats": {
-      "baseline_acc": 62.28571428571429,
+      "baseline_acc": 68.57142857142857,
       "baseline_ci": [
-        60.09523809523809,
-        64.38095238095238
+        66.61904761904762,
+        70.61904761904762
       ],
-      "context_acc": 59.952380952380956,
+      "context_acc": 68.57142857142857,
       "context_ci": [
-        57.85714285714286,
-        62.0
+        66.66666666666666,
+        70.57142857142857
       ],
-      "delta_p": -2.3333333333333357,
+      "delta_p": 0.0,
       "delta_p_ci": [
-        -4.190476190476189,
-        -0.3809523809523818
+        -1.9523809523809499,
+        1.8571428571428572
       ],
-      "delta_p_se": 0.976507698267748,
-      "mcnemar_stat": 5.832911392405063,
-      "mcnemar_p": 0.015729071694283836,
-      "significant": "True",
-      "mcnemar_b": 222,
-      "mcnemar_c": 173,
+      "delta_p_se": 0.9837186531774573,
+      "mcnemar_stat": 0.002336448598130841,
+      "mcnemar_p": 0.9614478071716756,
+      "significant": "False",
+      "mcnemar_b": 214,
+      "mcnemar_c": 214,
       "alpha": 0.05
     },
-    "f1_macro_simple": 0.5886961415845604,
-    "f1_macro_plus_z": 0.5736767715409484
+    "f1_macro_simple": 0.6678378315737797,
+    "f1_macro_plus_z": 0.6577929305178495,
+    "learned_logit_scale": 100.0,
+    "logit_scale_used": 100.0,
+    "common_logit_scale": null,
+    "temperature": 1.0,
+    "infer_mode": 0
   }
 ]

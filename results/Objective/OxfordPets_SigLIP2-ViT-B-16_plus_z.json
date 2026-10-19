@@ -12537,5 +12537,10 @@
     "Wheaten Terrier",
     "Yorkshire Terrier"
   ],
-  "condition": "+Z"
+  "condition": "+Z",
+  "learned_logit_scale": 112.66889953613281,
+  "logit_scale_used": 112.66889953613281,
+  "common_logit_scale": null,
+  "temperature": 1.0,
+  "infer_mode": 0
 }

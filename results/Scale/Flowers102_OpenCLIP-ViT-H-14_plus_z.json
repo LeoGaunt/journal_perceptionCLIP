@@ -29272,5 +29272,10 @@
     "trumpet creeper",
     "blackberry lily"
   ],
-  "condition": "+Z"
+  "condition": "+Z",
+  "learned_logit_scale": 100.0,
+  "logit_scale_used": 100.0,
+  "common_logit_scale": null,
+  "temperature": 1.0,
+  "infer_mode": 0
 }

@@ -8,32 +8,37 @@
     "location",
     "state"
   ],
-  "simple_acc": 70.7461162570199,
-  "plus_z_acc": 73.20399880409241,
+  "simple_acc": 82.64167456786522,
+  "plus_z_acc": 84.91721749305725,
   "delta_p_stats": {
-    "baseline_acc": 70.7461162570199,
+    "baseline_acc": 82.64167456786522,
     "baseline_ci": [
-      69.99489461016702,
-      71.49004448982569
+      82.0217343738604,
+      83.26909051126833
     ],
-    "context_acc": 73.20399679089782,
+    "context_acc": 84.91721975056524,
     "context_ci": [
-      72.44548172999781,
-      73.94081394500766
+      84.29709722120924,
+      85.50069287433448
     ],
-    "delta_p": 2.457880533877912,
+    "delta_p": 2.2755451827000144,
     "delta_p_ci": [
-      2.0638538399824946,
-      2.851724892422147
+      1.8815184888046075,
+      2.676865290642553
     ],
-    "delta_p_se": 0.19831974483161222,
-    "mcnemar_stat": 148.74308300395256,
+    "delta_p_se": 0.20505434623365723,
+    "mcnemar_stat": 118.53063725490196,
     "mcnemar_p": 0.0,
     "significant": "True",
-    "mcnemar_b": 211,
-    "mcnemar_c": 548,
+    "mcnemar_b": 252,
+    "mcnemar_c": 564,
     "alpha": 0.05
   },
-  "f1_macro_simple": 0.6568602542234939,
-  "f1_macro_plus_z": 0.6858713441723754
+  "f1_macro_simple": 0.7992209233408615,
+  "f1_macro_plus_z": 0.8290009954658669,
+  "learned_logit_scale": 100.0,
+  "logit_scale_used": 100.0,
+  "common_logit_scale": null,
+  "temperature": 1.0,
+  "infer_mode": 0
 }

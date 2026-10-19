@@ -6,32 +6,37 @@
     "source",
     "land"
   ],
-  "simple_acc": 62.28571428571429,
-  "plus_z_acc": 59.952378273010254,
+  "simple_acc": 68.57142857142857,
+  "plus_z_acc": 68.57143044471741,
   "delta_p_stats": {
-    "baseline_acc": 62.28571428571429,
+    "baseline_acc": 68.57142857142857,
     "baseline_ci": [
-      60.09523809523809,
-      64.38095238095238
+      66.61904761904762,
+      70.61904761904762
     ],
-    "context_acc": 59.952380952380956,
+    "context_acc": 68.57142857142857,
     "context_ci": [
-      57.85714285714286,
-      62.0
+      66.66666666666666,
+      70.57142857142857
     ],
-    "delta_p": -2.3333333333333357,
+    "delta_p": 0.0,
     "delta_p_ci": [
-      -4.190476190476189,
-      -0.3809523809523818
+      -1.9523809523809499,
+      1.8571428571428572
     ],
-    "delta_p_se": 0.976507698267748,
-    "mcnemar_stat": 5.832911392405063,
-    "mcnemar_p": 0.015729071694283836,
-    "significant": "True",
-    "mcnemar_b": 222,
-    "mcnemar_c": 173,
+    "delta_p_se": 0.9837186531774573,
+    "mcnemar_stat": 0.002336448598130841,
+    "mcnemar_p": 0.9614478071716756,
+    "significant": "False",
+    "mcnemar_b": 214,
+    "mcnemar_c": 214,
     "alpha": 0.05
   },
-  "f1_macro_simple": 0.5886961415845604,
-  "f1_macro_plus_z": 0.5736767715409484
+  "f1_macro_simple": 0.6678378315737797,
+  "f1_macro_plus_z": 0.6577929305178495,
+  "learned_logit_scale": 100.0,
+  "logit_scale_used": 100.0,
+  "common_logit_scale": null,
+  "temperature": 1.0,
+  "infer_mode": 0
 }
